@@ -1,0 +1,770 @@
+[
+  {
+    "erc721EnumerableGas": 92247,
+    "erc721AGas": 94619,
+    "erc721OZGas": 104138,
+    "erc721NaomsaGas": 116471
+  },
+  {
+    "erc721EnumerableGas": 93607,
+    "erc721AGas": 96959,
+    "erc721OZGas": 219063,
+    "erc721NaomsaGas": 142229
+  },
+  {
+    "erc721EnumerableGas": 94967,
+    "erc721AGas": 99299,
+    "erc721OZGas": 333988,
+    "erc721NaomsaGas": 167987
+  },
+  {
+    "erc721EnumerableGas": 96328,
+    "erc721AGas": 101639,
+    "erc721OZGas": 448913,
+    "erc721NaomsaGas": 193745
+  },
+  {
+    "erc721EnumerableGas": 97688,
+    "erc721AGas": 103979,
+    "erc721OZGas": 563838,
+    "erc721NaomsaGas": 219503
+  },
+  {
+    "erc721EnumerableGas": 99049,
+    "erc721AGas": 106319,
+    "erc721OZGas": 678763,
+    "erc721NaomsaGas": 245261
+  },
+  {
+    "erc721EnumerableGas": 100412,
+    "erc721AGas": 108659,
+    "erc721OZGas": 793688,
+    "erc721NaomsaGas": 271019
+  },
+  {
+    "erc721EnumerableGas": 101773,
+    "erc721AGas": 110999,
+    "erc721OZGas": 908613,
+    "erc721NaomsaGas": 296777
+  },
+  {
+    "erc721EnumerableGas": 103134,
+    "erc721AGas": 113339,
+    "erc721OZGas": 1023539,
+    "erc721NaomsaGas": 322536
+  },
+  {
+    "erc721EnumerableGas": 104495,
+    "erc721AGas": 115679,
+    "erc721OZGas": 1138464,
+    "erc721NaomsaGas": 348294
+  },
+  {
+    "erc721EnumerableGas": 105855,
+    "erc721AGas": 118019,
+    "erc721OZGas": 1253389,
+    "erc721NaomsaGas": 374052
+  },
+  {
+    "erc721EnumerableGas": 107216,
+    "erc721AGas": 120359,
+    "erc721OZGas": 1368314,
+    "erc721NaomsaGas": 399810
+  },
+  {
+    "erc721EnumerableGas": 108577,
+    "erc721AGas": 122699,
+    "erc721OZGas": 1483239,
+    "erc721NaomsaGas": 425568
+  },
+  {
+    "erc721EnumerableGas": 109938,
+    "erc721AGas": 125039,
+    "erc721OZGas": 1598165,
+    "erc721NaomsaGas": 451327
+  },
+  {
+    "erc721EnumerableGas": 111299,
+    "erc721AGas": 127379,
+    "erc721OZGas": 1713090,
+    "erc721NaomsaGas": 477085
+  },
+  {
+    "erc721EnumerableGas": 134862,
+    "erc721AGas": 129719,
+    "erc721OZGas": 1828015,
+    "erc721NaomsaGas": 502843
+  },
+  {
+    "erc721EnumerableGas": 158748,
+    "erc721AGas": 132059,
+    "erc721OZGas": 1942940,
+    "erc721NaomsaGas": 528601
+  },
+  {
+    "erc721EnumerableGas": 160123,
+    "erc721AGas": 134399,
+    "erc721OZGas": 2057866,
+    "erc721NaomsaGas": 554360
+  },
+  {
+    "erc721EnumerableGas": 161498,
+    "erc721AGas": 136739,
+    "erc721OZGas": 2172791,
+    "erc721NaomsaGas": 580118
+  },
+  {
+    "erc721EnumerableGas": 162873,
+    "erc721AGas": 139079,
+    "erc721OZGas": 2287716,
+    "erc721NaomsaGas": 605876
+  },
+  {
+    "erc721EnumerableGas": 164248,
+    "erc721AGas": 141419,
+    "erc721OZGas": 2402642,
+    "erc721NaomsaGas": 631635
+  },
+  {
+    "erc721EnumerableGas": 165623,
+    "erc721AGas": 143759,
+    "erc721OZGas": 2517567,
+    "erc721NaomsaGas": 657393
+  },
+  {
+    "erc721EnumerableGas": 167002,
+    "erc721AGas": 146099,
+    "erc721OZGas": 2632493,
+    "erc721NaomsaGas": 683152
+  },
+  {
+    "erc721EnumerableGas": 168378,
+    "erc721AGas": 148439,
+    "erc721OZGas": 2747418,
+    "erc721NaomsaGas": 708910
+  },
+  {
+    "erc721EnumerableGas": 169753,
+    "erc721AGas": 150779,
+    "erc721OZGas": 2862343,
+    "erc721NaomsaGas": 734668
+  },
+  {
+    "erc721EnumerableGas": 171129,
+    "erc721AGas": 153119,
+    "erc721OZGas": 2977269,
+    "erc721NaomsaGas": 760427
+  },
+  {
+    "erc721EnumerableGas": 172505,
+    "erc721AGas": 155459,
+    "erc721OZGas": 3092194,
+    "erc721NaomsaGas": 786185
+  },
+  {
+    "erc721EnumerableGas": 173881,
+    "erc721AGas": 157799,
+    "erc721OZGas": 3207120,
+    "erc721NaomsaGas": 811944
+  },
+  {
+    "erc721EnumerableGas": 175258,
+    "erc721AGas": 160139,
+    "erc721OZGas": 3322045,
+    "erc721NaomsaGas": 837702
+  },
+  {
+    "erc721EnumerableGas": 176634,
+    "erc721AGas": 162479,
+    "erc721OZGas": 3436971,
+    "erc721NaomsaGas": 863461
+  },
+  {
+    "erc721EnumerableGas": 178011,
+    "erc721AGas": 164819,
+    "erc721OZGas": 3551896,
+    "erc721NaomsaGas": 889219
+  },
+  {
+    "erc721EnumerableGas": 179388,
+    "erc721AGas": 167159,
+    "erc721OZGas": 3666822,
+    "erc721NaomsaGas": 914978
+  },
+  {
+    "erc721EnumerableGas": 225331,
+    "erc721AGas": 169499,
+    "erc721OZGas": 3781747,
+    "erc721NaomsaGas": 940736
+  },
+  {
+    "erc721EnumerableGas": 226724,
+    "erc721AGas": 171839,
+    "erc721OZGas": 3896673,
+    "erc721NaomsaGas": 966495
+  },
+  {
+    "erc721EnumerableGas": 228117,
+    "erc721AGas": 174179,
+    "erc721OZGas": 4011598,
+    "erc721NaomsaGas": 992253
+  },
+  {
+    "erc721EnumerableGas": 229511,
+    "erc721AGas": 176519,
+    "erc721OZGas": 4126524,
+    "erc721NaomsaGas": 1018012
+  },
+  {
+    "erc721EnumerableGas": 230904,
+    "erc721AGas": 178859,
+    "erc721OZGas": 4241450,
+    "erc721NaomsaGas": 1043771
+  },
+  {
+    "erc721EnumerableGas": 232298,
+    "erc721AGas": 181199,
+    "erc721OZGas": 4356375,
+    "erc721NaomsaGas": 1069529
+  },
+  {
+    "erc721EnumerableGas": 233696,
+    "erc721AGas": 183539,
+    "erc721OZGas": 4471301,
+    "erc721NaomsaGas": 1095288
+  },
+  {
+    "erc721EnumerableGas": 235091,
+    "erc721AGas": 185879,
+    "erc721OZGas": 4586227,
+    "erc721NaomsaGas": 1121047
+  },
+  {
+    "erc721EnumerableGas": 236485,
+    "erc721AGas": 188219,
+    "erc721OZGas": 4701152,
+    "erc721NaomsaGas": 1146805
+  },
+  {
+    "erc721EnumerableGas": 237880,
+    "erc721AGas": 190559,
+    "erc721OZGas": 4816078,
+    "erc721NaomsaGas": 1172564
+  },
+  {
+    "erc721EnumerableGas": 239275,
+    "erc721AGas": 192899,
+    "erc721OZGas": 4931004,
+    "erc721NaomsaGas": 1198323
+  },
+  {
+    "erc721EnumerableGas": 240671,
+    "erc721AGas": 195239,
+    "erc721OZGas": 5045929,
+    "erc721NaomsaGas": 1224081
+  },
+  {
+    "erc721EnumerableGas": 242066,
+    "erc721AGas": 197579,
+    "erc721OZGas": 5160855,
+    "erc721NaomsaGas": 1249840
+  },
+  {
+    "erc721EnumerableGas": 243462,
+    "erc721AGas": 199919,
+    "erc721OZGas": 5275781,
+    "erc721NaomsaGas": 1275599
+  },
+  {
+    "erc721EnumerableGas": 244858,
+    "erc721AGas": 202259,
+    "erc721OZGas": 5390707,
+    "erc721NaomsaGas": 1301358
+  },
+  {
+    "erc721EnumerableGas": 246254,
+    "erc721AGas": 204599,
+    "erc721OZGas": 5505632,
+    "erc721NaomsaGas": 1327116
+  },
+  {
+    "erc721EnumerableGas": 270723,
+    "erc721AGas": 206939,
+    "erc721OZGas": 5620558,
+    "erc721NaomsaGas": 1352875
+  },
+  {
+    "erc721EnumerableGas": 272139,
+    "erc721AGas": 209279,
+    "erc721OZGas": 5735484,
+    "erc721NaomsaGas": 1378634
+  },
+  {
+    "erc721EnumerableGas": 273555,
+    "erc721AGas": 211619,
+    "erc721OZGas": 5850410,
+    "erc721NaomsaGas": 1404393
+  },
+  {
+    "erc721EnumerableGas": 274972,
+    "erc721AGas": 213959,
+    "erc721OZGas": 5965336,
+    "erc721NaomsaGas": 1430152
+  },
+  {
+    "erc721EnumerableGas": 276389,
+    "erc721AGas": 216299,
+    "erc721OZGas": 6080262,
+    "erc721NaomsaGas": 1455911
+  },
+  {
+    "erc721EnumerableGas": 277806,
+    "erc721AGas": 218639,
+    "erc721OZGas": 6195187,
+    "erc721NaomsaGas": 1481669
+  },
+  {
+    "erc721EnumerableGas": 279229,
+    "erc721AGas": 220979,
+    "erc721OZGas": 6310113,
+    "erc721NaomsaGas": 1507428
+  },
+  {
+    "erc721EnumerableGas": 280648,
+    "erc721AGas": 223319,
+    "erc721OZGas": 6425039,
+    "erc721NaomsaGas": 1533187
+  },
+  {
+    "erc721EnumerableGas": 282066,
+    "erc721AGas": 225659,
+    "erc721OZGas": 6539965,
+    "erc721NaomsaGas": 1558946
+  },
+  {
+    "erc721EnumerableGas": 283486,
+    "erc721AGas": 227999,
+    "erc721OZGas": 6654891,
+    "erc721NaomsaGas": 1584705
+  },
+  {
+    "erc721EnumerableGas": 284905,
+    "erc721AGas": 230339,
+    "erc721OZGas": 6769817,
+    "erc721NaomsaGas": 1610464
+  },
+  {
+    "erc721EnumerableGas": 286325,
+    "erc721AGas": 232679,
+    "erc721OZGas": 6884743,
+    "erc721NaomsaGas": 1636223
+  },
+  {
+    "erc721EnumerableGas": 287745,
+    "erc721AGas": 235019,
+    "erc721OZGas": 6999669,
+    "erc721NaomsaGas": 1661982
+  },
+  {
+    "erc721EnumerableGas": 289166,
+    "erc721AGas": 237359,
+    "erc721OZGas": 7114595,
+    "erc721NaomsaGas": 1687741
+  },
+  {
+    "erc721EnumerableGas": 290587,
+    "erc721AGas": 239699,
+    "erc721OZGas": 7229521,
+    "erc721NaomsaGas": 1713500
+  },
+  {
+    "erc721EnumerableGas": 292009,
+    "erc721AGas": 242039,
+    "erc721OZGas": 7344447,
+    "erc721NaomsaGas": 1739259
+  },
+  {
+    "erc721EnumerableGas": 338692,
+    "erc721AGas": 244379,
+    "erc721OZGas": 7459373,
+    "erc721NaomsaGas": 1765018
+  },
+  {
+    "erc721EnumerableGas": 340138,
+    "erc721AGas": 246719,
+    "erc721OZGas": 7574299,
+    "erc721NaomsaGas": 1790777
+  },
+  {
+    "erc721EnumerableGas": 341584,
+    "erc721AGas": 249059,
+    "erc721OZGas": 7689225,
+    "erc721NaomsaGas": 1816536
+  },
+  {
+    "erc721EnumerableGas": 343031,
+    "erc721AGas": 251399,
+    "erc721OZGas": 7804151,
+    "erc721NaomsaGas": 1842295
+  },
+  {
+    "erc721EnumerableGas": 344478,
+    "erc721AGas": 253739,
+    "erc721OZGas": 7919077,
+    "erc721NaomsaGas": 1868054
+  },
+  {
+    "erc721EnumerableGas": 345926,
+    "erc721AGas": 256079,
+    "erc721OZGas": 8034004,
+    "erc721NaomsaGas": 1893814
+  },
+  {
+    "erc721EnumerableGas": 347381,
+    "erc721AGas": 258419,
+    "erc721OZGas": 8148930,
+    "erc721NaomsaGas": 1919573
+  },
+  {
+    "erc721EnumerableGas": 348830,
+    "erc721AGas": 260759,
+    "erc721OZGas": 8263856,
+    "erc721NaomsaGas": 1945332
+  },
+  {
+    "erc721EnumerableGas": 350280,
+    "erc721AGas": 263099,
+    "erc721OZGas": 8378782,
+    "erc721NaomsaGas": 1971091
+  },
+  {
+    "erc721EnumerableGas": 351730,
+    "erc721AGas": 265439,
+    "erc721OZGas": 8493708,
+    "erc721NaomsaGas": 1996850
+  },
+  {
+    "erc721EnumerableGas": 353181,
+    "erc721AGas": 267779,
+    "erc721OZGas": 8608634,
+    "erc721NaomsaGas": 2022609
+  },
+  {
+    "erc721EnumerableGas": 354632,
+    "erc721AGas": 270119,
+    "erc721OZGas": 8723561,
+    "erc721NaomsaGas": 2048369
+  },
+  {
+    "erc721EnumerableGas": 356084,
+    "erc721AGas": 272459,
+    "erc721OZGas": 8838487,
+    "erc721NaomsaGas": 2074128
+  },
+  {
+    "erc721EnumerableGas": 357537,
+    "erc721AGas": 274799,
+    "erc721OZGas": 8953413,
+    "erc721NaomsaGas": 2099887
+  },
+  {
+    "erc721EnumerableGas": 358990,
+    "erc721AGas": 277139,
+    "erc721OZGas": 9068339,
+    "erc721NaomsaGas": 2125646
+  },
+  {
+    "erc721EnumerableGas": 360443,
+    "erc721AGas": 279479,
+    "erc721OZGas": 9183266,
+    "erc721NaomsaGas": 2151406
+  },
+  {
+    "erc721EnumerableGas": 385860,
+    "erc721AGas": 281819,
+    "erc721OZGas": 9298192,
+    "erc721NaomsaGas": 2177165
+  },
+  {
+    "erc721EnumerableGas": 387343,
+    "erc721AGas": 284159,
+    "erc721OZGas": 9413118,
+    "erc721NaomsaGas": 2202924
+  },
+  {
+    "erc721EnumerableGas": 388827,
+    "erc721AGas": 286499,
+    "erc721OZGas": 9528045,
+    "erc721NaomsaGas": 2228684
+  },
+  {
+    "erc721EnumerableGas": 390312,
+    "erc721AGas": 288839,
+    "erc721OZGas": 9642971,
+    "erc721NaomsaGas": 2254443
+  },
+  {
+    "erc721EnumerableGas": 391798,
+    "erc721AGas": 291179,
+    "erc721OZGas": 9757897,
+    "erc721NaomsaGas": 2280202
+  },
+  {
+    "erc721EnumerableGas": 393285,
+    "erc721AGas": 293519,
+    "erc721OZGas": 9872824,
+    "erc721NaomsaGas": 2305962
+  },
+  {
+    "erc721EnumerableGas": 394780,
+    "erc721AGas": 295859,
+    "erc721OZGas": 9987750,
+    "erc721NaomsaGas": 2331721
+  },
+  {
+    "erc721EnumerableGas": 396268,
+    "erc721AGas": 298199,
+    "erc721OZGas": 10102676,
+    "erc721NaomsaGas": 2357480
+  },
+  {
+    "erc721EnumerableGas": 397757,
+    "erc721AGas": 300539,
+    "erc721OZGas": 10217603,
+    "erc721NaomsaGas": 2383240
+  },
+  {
+    "erc721EnumerableGas": 399247,
+    "erc721AGas": 302879,
+    "erc721OZGas": 10332529,
+    "erc721NaomsaGas": 2408999
+  },
+  {
+    "erc721EnumerableGas": 400737,
+    "erc721AGas": 305219,
+    "erc721OZGas": 10447456,
+    "erc721NaomsaGas": 2434759
+  },
+  {
+    "erc721EnumerableGas": 402228,
+    "erc721AGas": 307559,
+    "erc721OZGas": 10562382,
+    "erc721NaomsaGas": 2460518
+  },
+  {
+    "erc721EnumerableGas": 403720,
+    "erc721AGas": 309899,
+    "erc721OZGas": 10677309,
+    "erc721NaomsaGas": 2486278
+  },
+  {
+    "erc721EnumerableGas": 405213,
+    "erc721AGas": 312239,
+    "erc721OZGas": 10792235,
+    "erc721NaomsaGas": 2512037
+  },
+  {
+    "erc721EnumerableGas": 406706,
+    "erc721AGas": 314579,
+    "erc721OZGas": 10907162,
+    "erc721NaomsaGas": 2537797
+  },
+  {
+    "erc721EnumerableGas": 408201,
+    "erc721AGas": 316919,
+    "erc721OZGas": 11022088,
+    "erc721NaomsaGas": 2563556
+  },
+  {
+    "erc721EnumerableGas": 456091,
+    "erc721AGas": 319259,
+    "erc721OZGas": 11137015,
+    "erc721NaomsaGas": 2589316
+  },
+  {
+    "erc721EnumerableGas": 457622,
+    "erc721AGas": 321599,
+    "erc721OZGas": 11251941,
+    "erc721NaomsaGas": 2615075
+  },
+  {
+    "erc721EnumerableGas": 459154,
+    "erc721AGas": 323939,
+    "erc721OZGas": 11366868,
+    "erc721NaomsaGas": 2640835
+  },
+  {
+    "erc721EnumerableGas": 460687,
+    "erc721AGas": 326279,
+    "erc721OZGas": 11481795,
+    "erc721NaomsaGas": 2666595
+  },
+  {
+    "erc721EnumerableGas": 462221,
+    "erc721AGas": 328619,
+    "erc721OZGas": 11596721,
+    "erc721NaomsaGas": 2692354
+  },
+  {
+    "erc721EnumerableGas": 463756,
+    "erc721AGas": 330959,
+    "erc721OZGas": 11711648,
+    "erc721NaomsaGas": 2718114
+  },
+  {
+    "erc721EnumerableGas": 465301,
+    "erc721AGas": 333299,
+    "erc721OZGas": 11826574,
+    "erc721NaomsaGas": 2743873
+  },
+  {
+    "erc721EnumerableGas": 466838,
+    "erc721AGas": 335639,
+    "erc721OZGas": 11941501,
+    "erc721NaomsaGas": 2769633
+  },
+  {
+    "erc721EnumerableGas": 468376,
+    "erc721AGas": 337979,
+    "erc721OZGas": 12056428,
+    "erc721NaomsaGas": 2795393
+  },
+  {
+    "erc721EnumerableGas": 469915,
+    "erc721AGas": 340319,
+    "erc721OZGas": 12171354,
+    "erc721NaomsaGas": 2821152
+  },
+  {
+    "erc721EnumerableGas": 471455,
+    "erc721AGas": 342659,
+    "erc721OZGas": 12286281,
+    "erc721NaomsaGas": 2846912
+  },
+  {
+    "erc721EnumerableGas": 472996,
+    "erc721AGas": 344999,
+    "erc721OZGas": 12401208,
+    "erc721NaomsaGas": 2872672
+  },
+  {
+    "erc721EnumerableGas": 474538,
+    "erc721AGas": 347339,
+    "erc721OZGas": 12516135,
+    "erc721NaomsaGas": 2898432
+  },
+  {
+    "erc721EnumerableGas": 476081,
+    "erc721AGas": 349679,
+    "erc721OZGas": 12631061,
+    "erc721NaomsaGas": 2924191
+  },
+  {
+    "erc721EnumerableGas": 477625,
+    "erc721AGas": 352019,
+    "erc721OZGas": 12745988,
+    "erc721NaomsaGas": 2949951
+  },
+  {
+    "erc721EnumerableGas": 479170,
+    "erc721AGas": 354359,
+    "erc721OZGas": 12860915,
+    "erc721NaomsaGas": 2975711
+  },
+  {
+    "erc721EnumerableGas": 506103,
+    "erc721AGas": 356699,
+    "erc721OZGas": 12975842,
+    "erc721NaomsaGas": 3001471
+  },
+  {
+    "erc721EnumerableGas": 507692,
+    "erc721AGas": 359039,
+    "erc721OZGas": 13090769,
+    "erc721NaomsaGas": 3027231
+  },
+  {
+    "erc721EnumerableGas": 509283,
+    "erc721AGas": 361379,
+    "erc721OZGas": 13205695,
+    "erc721NaomsaGas": 3052990
+  },
+  {
+    "erc721EnumerableGas": 510875,
+    "erc721AGas": 363719,
+    "erc721OZGas": 13320622,
+    "erc721NaomsaGas": 3078750
+  },
+  {
+    "erc721EnumerableGas": 512468,
+    "erc721AGas": 366059,
+    "erc721OZGas": 13435549,
+    "erc721NaomsaGas": 3104510
+  },
+  {
+    "erc721EnumerableGas": 514062,
+    "erc721AGas": 368399,
+    "erc721OZGas": 13550476,
+    "erc721NaomsaGas": 3130270
+  },
+  {
+    "erc721EnumerableGas": 515669,
+    "erc721AGas": 370739,
+    "erc721OZGas": 13665403,
+    "erc721NaomsaGas": 3156030
+  },
+  {
+    "erc721EnumerableGas": 517266,
+    "erc721AGas": 373079,
+    "erc721OZGas": 13780330,
+    "erc721NaomsaGas": 3181790
+  },
+  {
+    "erc721EnumerableGas": 518864,
+    "erc721AGas": 375419,
+    "erc721OZGas": 13895257,
+    "erc721NaomsaGas": 3207550
+  },
+  {
+    "erc721EnumerableGas": 520464,
+    "erc721AGas": 377759,
+    "erc721OZGas": 14010184,
+    "erc721NaomsaGas": 3233310
+  },
+  {
+    "erc721EnumerableGas": 522065,
+    "erc721AGas": 380099,
+    "erc721OZGas": 14125111,
+    "erc721NaomsaGas": 3259070
+  },
+  {
+    "erc721EnumerableGas": 523667,
+    "erc721AGas": 382439,
+    "erc721OZGas": 14240038,
+    "erc721NaomsaGas": 3284830
+  },
+  {
+    "erc721EnumerableGas": 525270,
+    "erc721AGas": 384779,
+    "erc721OZGas": 14354965,
+    "erc721NaomsaGas": 3310590
+  },
+  {
+    "erc721EnumerableGas": 526875,
+    "erc721AGas": 387119,
+    "erc721OZGas": 14469892,
+    "erc721NaomsaGas": 3336350
+  },
+  {
+    "erc721EnumerableGas": 528481,
+    "erc721AGas": 389459,
+    "erc721OZGas": 14584819,
+    "erc721NaomsaGas": 3362110
+  },
+  {
+    "erc721EnumerableGas": 530088,
+    "erc721AGas": 391799,
+    "erc721OZGas": 14699746,
+    "erc721NaomsaGas": 3387870
+  }
+]

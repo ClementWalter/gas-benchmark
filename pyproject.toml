@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "gas-benchmark"
+version = "0.1.0"
+description = ""
+authors = ["Clement Walter <clement0walter@gmail.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+pandas = "^1.4.0"
+matplotlib = "^3.5.1"
+Pweave = "^0.30.3"
+
+[tool.poetry.dev-dependencies]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"

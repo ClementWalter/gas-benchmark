@@ -1,0 +1,16 @@
+node_modules
+.env
+coverage
+coverage.json
+typechain
+
+# Hardhat files
+cache
+artifacts
+
+# PyCharm files
+.idea/
+
+# Runners files
+.DS_Store
+runner1-*.svg
