@@ -181,6 +181,7 @@ pd.Series(json.load(open("data/events.json")))
 #' We now benchmark full implementations of the IERC721Enumerable interface. So far we have:
 #'
 #' - OpenZeppelin's standard implementation
+#' - [@naomsa's implementation](https://github.com/naomsa/sol-temple/blob/master/src/tokens/ERC721.sol)
 #' - Azuki's ERC721A implementation. Note that this implementation is not strictly equivalent as it does not allow unordered token ids
 #' - A proposed implementation based on a "ask don't compute principle"
 
