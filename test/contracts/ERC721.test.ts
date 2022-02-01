@@ -57,58 +57,62 @@ describe("ERC721", function () {
         expect(owner).to.equal(users[0].address);
       });
     });
-    describe("safeTransferFrom(address,address,uint256)", async function () {
-      const tokenId = 0;
-      it("should revert when from is address(0)", async () => {
-        const { ERC721, users } = await setup([TAGS.ERC721]);
-        expect(
-          ERC721.functions["safeTransferFrom(address,address,uint256)"](
-            ethers.constants.AddressZero,
-            users[0].address,
+    ["safeTransferFrom", "transferFrom"].map((transfer) => {
+      describe(`${transfer}(address,address,uint256)`, async function () {
+        const tokenId = 0;
+        it("should revert when from is address(0)", async () => {
+          const { ERC721, users } = await setup([TAGS.ERC721]);
+          expect(
+            ERC721.functions[`${transfer}(address,address,uint256)`](
+              ethers.constants.AddressZero,
+              users[0].address,
+              tokenId
+            )
+          ).to.be.revertedWith("ERC721: from cannot be the zero address");
+        });
+        it("should revert when to is address(0)", async () => {
+          const { ERC721, users } = await setup([TAGS.ERC721]);
+          expect(
+            ERC721.functions[`${transfer}(address,address,uint256)`](
+              users[0].address,
+              ethers.constants.AddressZero,
+              tokenId
+            )
+          ).to.be.revertedWith("ERC721: to cannot be the zero address");
+        });
+        it("should revert when sender is not approved", async () => {
+          const { users } = await setup([TAGS.ERC721]);
+          await users[0].ERC721.safeMintBatch(uintToBytes2(true)(tokenId));
+          expect(
+            users[1].ERC721.functions[`${transfer}(address,address,uint256)`](
+              users[0].address,
+              users[1].address,
+              tokenId
+            )
+          ).to.be.revertedWith("ERC721: caller is not approved for all tokens");
+        });
+        it("should transfer when sender is owner", async () => {
+          const { ERC721, users } = await setup([TAGS.ERC721]);
+          await users[0].ERC721.safeMintBatch(uintToBytes2(true)(tokenId));
+          await users[0].ERC721.functions[
+            `${transfer}(address,address,uint256)`
+          ](users[0].address, users[1].address, tokenId);
+          const owner = await ERC721.ownerOf(tokenId);
+          expect(owner).to.equal(users[1].address);
+        });
+        it("should transfer when sender is approved", async () => {
+          const { ERC721, users } = await setup([TAGS.ERC721]);
+          await users[0].ERC721.safeMintBatch(uintToBytes2(true)(tokenId));
+          await users[0].ERC721.functions["approve(address,uint256)"](
+            users[1].address,
             tokenId
-          )
-        ).to.be.revertedWith("ERC721: from cannot be the zero address");
-      });
-      it("should revert when to is address(0)", async () => {
-        const { ERC721, users } = await setup([TAGS.ERC721]);
-        expect(
-          ERC721.functions["safeTransferFrom(address,address,uint256)"](
-            users[0].address,
-            ethers.constants.AddressZero,
-            tokenId
-          )
-        ).to.be.revertedWith("ERC721: to cannot be the zero address");
-      });
-      it("should revert when sender is not approved", async () => {
-        const { users } = await setup([TAGS.ERC721]);
-        await users[0].ERC721.safeMintBatch(uintToBytes2(true)(tokenId));
-        expect(
-          users[1].ERC721.functions[
-            "safeTransferFrom(address,address,uint256)"
-          ](users[0].address, users[1].address, tokenId)
-        ).to.be.revertedWith("ERC721: caller is not approved for all tokens");
-      });
-      it("should transfer when sender is owner", async () => {
-        const { ERC721, users } = await setup([TAGS.ERC721]);
-        await users[0].ERC721.safeMintBatch(uintToBytes2(true)(tokenId));
-        await users[0].ERC721.functions[
-          "safeTransferFrom(address,address,uint256)"
-        ](users[0].address, users[1].address, tokenId);
-        const owner = await ERC721.ownerOf(tokenId);
-        expect(owner).to.equal(users[1].address);
-      });
-      it("should transfer when sender is approved", async () => {
-        const { ERC721, users } = await setup([TAGS.ERC721]);
-        await users[0].ERC721.safeMintBatch(uintToBytes2(true)(tokenId));
-        await users[0].ERC721.functions["approve(address,uint256)"](
-          users[1].address,
-          tokenId
-        );
-        await users[1].ERC721.functions[
-          "safeTransferFrom(address,address,uint256)"
-        ](users[0].address, users[1].address, tokenId);
-        const owner = await ERC721.ownerOf(tokenId);
-        expect(owner).to.equal(users[1].address);
+          );
+          await users[1].ERC721.functions[
+            `${transfer}(address,address,uint256)`
+          ](users[0].address, users[1].address, tokenId);
+          const owner = await ERC721.ownerOf(tokenId);
+          expect(owner).to.equal(users[1].address);
+        });
       });
     });
     describe("approve(address,uint256", async function () {
