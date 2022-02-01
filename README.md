@@ -198,6 +198,7 @@ Since these events are part of the specification, we cannot do too much about th
 cost associated with them will increase linearly with the batch size. For a single token we have:
 
 ```
+empty                 21898
 emitTransfer          23767
 emitApproval          23811
 emitApprovalForAll    23841
@@ -216,6 +217,7 @@ https://nftchance.medium.com/the-gas-efficient-way-of-building-and-launching-an-
 We now benchmark full implementations of the IERC721Enumerable interface. So far we have:
 
 - OpenZeppelin's standard implementation
+- [@naomsa's implementation](https://github.com/naomsa/sol-temple/blob/master/src/tokens/ERC721.sol)
 - Azuki's ERC721A implementation. Note that this implementation is not strictly equivalent as it does not allow unordered token ids
 - A proposed implementation based on a "ask don't compute principle"
 

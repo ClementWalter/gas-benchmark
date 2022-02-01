@@ -18,6 +18,9 @@ contract Events {
         bool indexed approved
     );
 
+    function emptyFunction(address, address, uint256) public {
+    }
+
     function emitTransfer(address from, address to, uint256 tokenId) public {
         emit Transfer(from, to, tokenId);
     }

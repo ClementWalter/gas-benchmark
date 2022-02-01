@@ -9,6 +9,8 @@ task("events", "Estimate gas for emitting ERC721 events").setAction(
 
     const Events = await ethers.getContract("Events");
 
+    const empty = await Events.estimateGas.emptyFunction(from, to, tokenId);
+
     const emitTransfer = await Events.estimateGas.emitTransfer(
       from,
       to,
@@ -27,6 +29,7 @@ task("events", "Estimate gas for emitting ERC721 events").setAction(
     );
 
     const gas = {
+      empty: empty.toNumber(),
       emitTransfer: emitTransfer.toNumber(),
       emitApproval: emitApproval.toNumber(),
       emitApprovalForAll: emitApprovalForAll.toNumber(),

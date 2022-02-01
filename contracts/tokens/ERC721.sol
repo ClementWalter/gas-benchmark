@@ -198,6 +198,7 @@ contract ERC721 is IERC721, IERC721Metadata, Context, ERC165 {
             );
         }
         _tokensByOwner[to] = bytes.concat(_tokensByOwner[to], tokenId);
+        emit Transfer(from, to, BytesLib.toUint16(tokenId, 0));
     }
 
     /// @dev Transfer token with minimal computing since all the required data to check is given
@@ -250,6 +251,7 @@ contract ERC721 is IERC721, IERC721Metadata, Context, ERC165 {
                 "ERC721: token already exists"
             );
             tokenExists[BytesLib.toUint16(tokenIds, i)] = true;
+            emit Transfer(address(0), to, BytesLib.toUint16(tokenIds, i));
         }
         _tokensByOwner[to] = bytes.concat(_tokensByOwner[to], tokenIds);
     }
@@ -286,6 +288,7 @@ contract ERC721 is IERC721, IERC721Metadata, Context, ERC165 {
                     tokenId,
                 "ERC721: caller is neither approved nor owner"
             );
+            emit Approval(msg.sender, to, tokenId);
         }
         _tokenApprovals[uint16(tokenId)] = to;
     }
