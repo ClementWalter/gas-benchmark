@@ -223,7 +223,7 @@ contract ERC721 is IERC721, IERC721Metadata, Context, ERC165 {
             tokenIndex * 2
         );
         require(
-            _tokenApprovals[tokenId] == msg.sender || from == msg.sender,
+            _tokenApprovals[tokenId] == _msgSender() || from == _msgSender(),
             "ERC721: caller is neither approved nor owner"
         );
         _transfer(from, fromIndex, to, tokenIndex);
@@ -258,10 +258,10 @@ contract ERC721 is IERC721, IERC721Metadata, Context, ERC165 {
     /// @dev Add a batch of token Ids given as a bytes array to the sender
     /// @param tokenIds bytes a bytes of tokenIds as bytes2 (uint16)
     function safeMintBatch(bytes calldata tokenIds) public {
-        _mintBatch(msg.sender, tokenIds);
+        _mintBatch(_msgSender(), tokenIds);
         _checkOnERC721Received(
             address(0),
-            msg.sender,
+            _msgSender(),
             BytesLib.toUint16(tokenIds, 0),
             ""
         );
@@ -276,18 +276,20 @@ contract ERC721 is IERC721, IERC721Metadata, Context, ERC165 {
         uint256 tokenId,
         uint256 tokenIndex
     ) external {
-        if (_tokenApprovals[uint16(tokenId)] != msg.sender) {
+        if (_tokenApprovals[uint16(tokenId)] != _msgSender()) {
             // if sender is not approved, they need to be the owner
             require(
-                tokenIndex * 2 < _tokensByOwner[msg.sender].length,
+                tokenIndex * 2 < _tokensByOwner[_msgSender()].length,
                 "ERC721: token index out of range"
             );
             require(
-                BytesLib.toUint16(_tokensByOwner[msg.sender], tokenIndex * 2) ==
-                    tokenId,
+                BytesLib.toUint16(
+                    _tokensByOwner[_msgSender()],
+                    tokenIndex * 2
+                ) == tokenId,
                 "ERC721: caller is neither approved nor owner"
             );
-            emit Approval(msg.sender, to, tokenId);
+            emit Approval(_msgSender(), to, tokenId);
         }
         _tokenApprovals[uint16(tokenId)] = to;
     }
@@ -320,17 +322,17 @@ contract ERC721 is IERC721, IERC721Metadata, Context, ERC165 {
         override
     {
         require(
-            operator != msg.sender,
+            operator != _msgSender(),
             "ERC721: cannot approve caller as operator"
         );
-        bytes memory tokens = _tokensByOwner[msg.sender];
+        bytes memory tokens = _tokensByOwner[_msgSender()];
         for (uint256 i = 0; i < tokens.length; i += 2) {
             _tokenApprovals[BytesLib.toUint16(tokens, i)] = _approved
                 ? operator
                 : address(0);
         }
 
-        emit ApprovalForAll(msg.sender, operator, _approved);
+        emit ApprovalForAll(_msgSender(), operator, _approved);
     }
 
     /**
@@ -381,8 +383,8 @@ contract ERC721 is IERC721, IERC721Metadata, Context, ERC165 {
         require(from != address(0), "ERC721: from cannot be the zero address");
         require(to != address(0), "ERC721: to cannot be the zero address");
         require(
-            _tokenApprovals[uint16(tokenId)] == msg.sender ||
-                from == msg.sender,
+            _tokenApprovals[uint16(tokenId)] == _msgSender() ||
+                from == _msgSender(),
             "ERC721: caller is not approved for all tokens"
         );
         uint256 tokenIndex = 0;
@@ -425,7 +427,7 @@ contract ERC721 is IERC721, IERC721Metadata, Context, ERC165 {
         address to,
         uint256 tokenId
     ) external override {
-        _safeTransferFrom(from, to, tokenId, bytes(""));
+        _safeTransferFrom(from, to, tokenId, "");
     }
 
     /**
@@ -450,8 +452,8 @@ contract ERC721 is IERC721, IERC721Metadata, Context, ERC165 {
         require(from != address(0), "ERC721: from cannot be the zero address");
         require(to != address(0), "ERC721: to cannot be the zero address");
         require(
-            _tokenApprovals[uint16(tokenId)] == msg.sender ||
-                from == msg.sender,
+            _tokenApprovals[uint16(tokenId)] == _msgSender() ||
+                from == _msgSender(),
             "ERC721: caller is not approved for all tokens"
         );
         uint256 tokenIndex = 0;
@@ -540,8 +542,8 @@ contract ERC721 is IERC721, IERC721Metadata, Context, ERC165 {
             "ERC721: approve query for nonexistent token"
         );
         require(
-            _tokenApprovals[uint16(tokenId)] == msg.sender ||
-                owner == msg.sender,
+            _tokenApprovals[uint16(tokenId)] == _msgSender() ||
+                owner == _msgSender(),
             "ERC721: caller is not the owner nor an approved operator for the token"
         );
         _tokenApprovals[uint16(tokenId)] = to;
