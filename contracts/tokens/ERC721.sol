@@ -228,7 +228,6 @@ contract ERC721 is IERC721, IERC721Metadata, Context, ERC165 {
         );
         _transfer(from, fromIndex, to, tokenIndex);
         _checkOnERC721Received(from, to, tokenId, "");
-        emit Transfer(from, to, tokenId);
     }
 
     /**
@@ -410,7 +409,6 @@ contract ERC721 is IERC721, IERC721Metadata, Context, ERC165 {
         );
         _transfer(from, fromIndex, to, tokenIndex);
         _checkOnERC721Received(from, to, tokenId, data);
-        emit Transfer(from, to, tokenId);
     }
 
     function safeTransferFrom(
@@ -479,7 +477,6 @@ contract ERC721 is IERC721, IERC721Metadata, Context, ERC165 {
             "ERC721: from is not in owners list"
         );
         _transfer(from, fromIndex, to, tokenIndex);
-        emit Transfer(from, to, tokenId);
     }
 
     /**
