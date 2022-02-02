@@ -89,7 +89,9 @@ describe("ERC721", function () {
               users[1].address,
               tokenId
             )
-          ).to.be.revertedWith("ERC721: caller is not approved for all tokens");
+          ).to.be.revertedWith(
+            "ERC721: transfer caller is not owner nor approved"
+          );
         });
         it("should transfer when sender is owner", async () => {
           const { ERC721, users } = await setup([TAGS.ERC721]);
@@ -295,7 +297,9 @@ describe("ERC721", function () {
           users[1].ERC721.functions[
             "safeTransferFrom(address,uint256,address,uint256)"
           ](users[0].address, 0, users[2].address, 0)
-        ).to.be.revertedWith("ERC721: caller is neither approved nor owner");
+        ).to.be.revertedWith(
+          "ERC721: transfer caller is not owner nor approved"
+        );
       });
       it("should transfer when sender is owner", async () => {
         const { users, ERC721 } = await setup([TAGS.ERC721]);

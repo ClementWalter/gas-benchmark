@@ -106,6 +106,15 @@ contract ERC721 is IERC721, IERC721Metadata, Context, ERC165 {
         revert("ERC721: Owner not found");
     }
 
+    /// @dev Returns the array of bool telling if a token exists or not.
+    function getTokenExists()
+        external
+        view
+        returns (bool[MAX_NUMBER_OF_TOKENS] memory)
+    {
+        return tokenExists;
+    }
+
     /**
      * @param tokenId uint16 A given token id
      * @return bool True if the token exists, false otherwise
@@ -223,8 +232,8 @@ contract ERC721 is IERC721, IERC721Metadata, Context, ERC165 {
             tokenIndex * 2
         );
         require(
-            _tokenApprovals[tokenId] == _msgSender() || from == _msgSender(),
-            "ERC721: caller is neither approved nor owner"
+            _isApprovedOrOwner(_msgSender(), tokenId),
+            "ERC721: transfer caller is not owner nor approved"
         );
         _transfer(from, fromIndex, to, tokenIndex);
         _checkOnERC721Received(from, to, tokenId, "");
@@ -302,7 +311,7 @@ contract ERC721 is IERC721, IERC721Metadata, Context, ERC165 {
      * - `tokenId` must exist.
      */
     function getApproved(uint256 tokenId)
-        external
+        public
         view
         override
         returns (address)
@@ -341,8 +350,9 @@ contract ERC721 is IERC721, IERC721Metadata, Context, ERC165 {
      * @param operator The address of the operator to check.
      */
     function isApprovedForAll(address owner, address operator)
-        external
+        public
         view
+        virtual
         override
         returns (bool)
     {
@@ -353,6 +363,23 @@ contract ERC721 is IERC721, IERC721Metadata, Context, ERC165 {
             }
         }
         return true;
+    }
+
+    /// @dev Copied from OpenZeppelin ERC721.sol
+    function _isApprovedOrOwner(address spender, uint256 tokenId)
+        internal
+        view
+        virtual
+        returns (bool)
+    {
+        require(
+            _exists(tokenId),
+            "ERC721: operator query for nonexistent token"
+        );
+        address owner = ERC721.ownerOf(tokenId);
+        return (spender == owner ||
+            getApproved(tokenId) == spender ||
+            isApprovedForAll(owner, spender));
     }
 
     ///////////////////////////////////////////////////////////////////////////////
@@ -383,9 +410,8 @@ contract ERC721 is IERC721, IERC721Metadata, Context, ERC165 {
         require(from != address(0), "ERC721: from cannot be the zero address");
         require(to != address(0), "ERC721: to cannot be the zero address");
         require(
-            _tokenApprovals[uint16(tokenId)] == _msgSender() ||
-                from == _msgSender(),
-            "ERC721: caller is not approved for all tokens"
+            _isApprovedOrOwner(_msgSender(), tokenId),
+            "ERC721: transfer caller is not owner nor approved"
         );
         uint256 tokenIndex = 0;
         while (
@@ -416,18 +442,18 @@ contract ERC721 is IERC721, IERC721Metadata, Context, ERC165 {
     function safeTransferFrom(
         address from,
         address to,
-        uint256 tokenId,
-        bytes memory data
+        uint256 tokenId
     ) external override {
-        _safeTransferFrom(from, to, tokenId, data);
+        _safeTransferFrom(from, to, tokenId, "");
     }
 
     function safeTransferFrom(
         address from,
         address to,
-        uint256 tokenId
+        uint256 tokenId,
+        bytes memory data
     ) external override {
-        _safeTransferFrom(from, to, tokenId, "");
+        _safeTransferFrom(from, to, tokenId, data);
     }
 
     /**
@@ -452,9 +478,8 @@ contract ERC721 is IERC721, IERC721Metadata, Context, ERC165 {
         require(from != address(0), "ERC721: from cannot be the zero address");
         require(to != address(0), "ERC721: to cannot be the zero address");
         require(
-            _tokenApprovals[uint16(tokenId)] == _msgSender() ||
-                from == _msgSender(),
-            "ERC721: caller is not approved for all tokens"
+            _isApprovedOrOwner(_msgSender(), tokenId),
+            "ERC721: transfer caller is not owner nor approved"
         );
         uint256 tokenIndex = 0;
         while (
@@ -517,7 +542,7 @@ contract ERC721 is IERC721, IERC721Metadata, Context, ERC165 {
      * @param tokenId uint265 A given token id
      * @return address The owner of the token.
      */
-    function ownerOf(uint256 tokenId) external view override returns (address) {
+    function ownerOf(uint256 tokenId) public view override returns (address) {
         require(_exists(tokenId), "ERC721: owner query for nonexistent token");
         return _ownerOf(tokenId);
     }
