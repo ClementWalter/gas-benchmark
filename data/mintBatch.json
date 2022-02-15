@@ -1,770 +1,1154 @@
 [
   {
-    "erc721EnumerableGas": 92247,
-    "erc721AGas": 94619,
-    "erc721OZGas": 104138,
-    "erc721NaomsaGas": 116471
-  },
-  {
-    "erc721EnumerableGas": 93607,
-    "erc721AGas": 96959,
-    "erc721OZGas": 219063,
-    "erc721NaomsaGas": 142229
-  },
-  {
-    "erc721EnumerableGas": 94967,
-    "erc721AGas": 99299,
-    "erc721OZGas": 333988,
-    "erc721NaomsaGas": 167987
-  },
-  {
-    "erc721EnumerableGas": 96328,
-    "erc721AGas": 101639,
-    "erc721OZGas": 448913,
-    "erc721NaomsaGas": 193745
-  },
-  {
-    "erc721EnumerableGas": 97688,
-    "erc721AGas": 103979,
-    "erc721OZGas": 563838,
-    "erc721NaomsaGas": 219503
-  },
-  {
-    "erc721EnumerableGas": 99049,
-    "erc721AGas": 106319,
-    "erc721OZGas": 678763,
-    "erc721NaomsaGas": 245261
-  },
-  {
-    "erc721EnumerableGas": 100412,
-    "erc721AGas": 108659,
-    "erc721OZGas": 793688,
-    "erc721NaomsaGas": 271019
-  },
-  {
-    "erc721EnumerableGas": 101773,
-    "erc721AGas": 110999,
-    "erc721OZGas": 908613,
-    "erc721NaomsaGas": 296777
-  },
-  {
-    "erc721EnumerableGas": 103134,
-    "erc721AGas": 113339,
-    "erc721OZGas": 1023539,
-    "erc721NaomsaGas": 322536
-  },
-  {
-    "erc721EnumerableGas": 104495,
-    "erc721AGas": 115679,
-    "erc721OZGas": 1138464,
-    "erc721NaomsaGas": 348294
-  },
-  {
-    "erc721EnumerableGas": 105855,
-    "erc721AGas": 118019,
-    "erc721OZGas": 1253389,
-    "erc721NaomsaGas": 374052
-  },
-  {
-    "erc721EnumerableGas": 107216,
-    "erc721AGas": 120359,
-    "erc721OZGas": 1368314,
-    "erc721NaomsaGas": 399810
-  },
-  {
-    "erc721EnumerableGas": 108577,
-    "erc721AGas": 122699,
-    "erc721OZGas": 1483239,
-    "erc721NaomsaGas": 425568
-  },
-  {
-    "erc721EnumerableGas": 109938,
-    "erc721AGas": 125039,
-    "erc721OZGas": 1598165,
-    "erc721NaomsaGas": 451327
-  },
-  {
-    "erc721EnumerableGas": 111299,
-    "erc721AGas": 127379,
-    "erc721OZGas": 1713090,
-    "erc721NaomsaGas": 477085
-  },
-  {
-    "erc721EnumerableGas": 134862,
-    "erc721AGas": 129719,
-    "erc721OZGas": 1828015,
-    "erc721NaomsaGas": 502843
-  },
-  {
-    "erc721EnumerableGas": 158748,
-    "erc721AGas": 132059,
-    "erc721OZGas": 1942940,
-    "erc721NaomsaGas": 528601
-  },
-  {
-    "erc721EnumerableGas": 160123,
-    "erc721AGas": 134399,
-    "erc721OZGas": 2057866,
-    "erc721NaomsaGas": 554360
-  },
-  {
-    "erc721EnumerableGas": 161498,
-    "erc721AGas": 136739,
-    "erc721OZGas": 2172791,
-    "erc721NaomsaGas": 580118
-  },
-  {
-    "erc721EnumerableGas": 162873,
-    "erc721AGas": 139079,
-    "erc721OZGas": 2287716,
-    "erc721NaomsaGas": 605876
-  },
-  {
-    "erc721EnumerableGas": 164248,
-    "erc721AGas": 141419,
-    "erc721OZGas": 2402642,
-    "erc721NaomsaGas": 631635
-  },
-  {
-    "erc721EnumerableGas": 165623,
-    "erc721AGas": 143759,
-    "erc721OZGas": 2517567,
-    "erc721NaomsaGas": 657393
-  },
-  {
-    "erc721EnumerableGas": 167002,
-    "erc721AGas": 146099,
-    "erc721OZGas": 2632493,
-    "erc721NaomsaGas": 683152
-  },
-  {
-    "erc721EnumerableGas": 168378,
-    "erc721AGas": 148439,
-    "erc721OZGas": 2747418,
-    "erc721NaomsaGas": 708910
-  },
-  {
-    "erc721EnumerableGas": 169753,
-    "erc721AGas": 150779,
-    "erc721OZGas": 2862343,
-    "erc721NaomsaGas": 734668
-  },
-  {
-    "erc721EnumerableGas": 171129,
-    "erc721AGas": 153119,
-    "erc721OZGas": 2977269,
-    "erc721NaomsaGas": 760427
-  },
-  {
-    "erc721EnumerableGas": 172505,
-    "erc721AGas": 155459,
-    "erc721OZGas": 3092194,
-    "erc721NaomsaGas": 786185
-  },
-  {
-    "erc721EnumerableGas": 173881,
-    "erc721AGas": 157799,
-    "erc721OZGas": 3207120,
-    "erc721NaomsaGas": 811944
-  },
-  {
-    "erc721EnumerableGas": 175258,
-    "erc721AGas": 160139,
-    "erc721OZGas": 3322045,
-    "erc721NaomsaGas": 837702
-  },
-  {
-    "erc721EnumerableGas": 176634,
-    "erc721AGas": 162479,
-    "erc721OZGas": 3436971,
-    "erc721NaomsaGas": 863461
-  },
-  {
-    "erc721EnumerableGas": 178011,
-    "erc721AGas": 164819,
-    "erc721OZGas": 3551896,
-    "erc721NaomsaGas": 889219
-  },
-  {
-    "erc721EnumerableGas": 179388,
-    "erc721AGas": 167159,
-    "erc721OZGas": 3666822,
-    "erc721NaomsaGas": 914978
-  },
-  {
-    "erc721EnumerableGas": 225331,
-    "erc721AGas": 169499,
-    "erc721OZGas": 3781747,
-    "erc721NaomsaGas": 940736
-  },
-  {
-    "erc721EnumerableGas": 226724,
-    "erc721AGas": 171839,
-    "erc721OZGas": 3896673,
-    "erc721NaomsaGas": 966495
-  },
-  {
-    "erc721EnumerableGas": 228117,
-    "erc721AGas": 174179,
-    "erc721OZGas": 4011598,
-    "erc721NaomsaGas": 992253
-  },
-  {
-    "erc721EnumerableGas": 229511,
-    "erc721AGas": 176519,
-    "erc721OZGas": 4126524,
-    "erc721NaomsaGas": 1018012
-  },
-  {
-    "erc721EnumerableGas": 230904,
-    "erc721AGas": 178859,
-    "erc721OZGas": 4241450,
-    "erc721NaomsaGas": 1043771
-  },
-  {
-    "erc721EnumerableGas": 232298,
-    "erc721AGas": 181199,
-    "erc721OZGas": 4356375,
-    "erc721NaomsaGas": 1069529
-  },
-  {
-    "erc721EnumerableGas": 233696,
-    "erc721AGas": 183539,
-    "erc721OZGas": 4471301,
-    "erc721NaomsaGas": 1095288
-  },
-  {
-    "erc721EnumerableGas": 235091,
-    "erc721AGas": 185879,
-    "erc721OZGas": 4586227,
-    "erc721NaomsaGas": 1121047
-  },
-  {
-    "erc721EnumerableGas": 236485,
-    "erc721AGas": 188219,
-    "erc721OZGas": 4701152,
-    "erc721NaomsaGas": 1146805
-  },
-  {
-    "erc721EnumerableGas": 237880,
-    "erc721AGas": 190559,
-    "erc721OZGas": 4816078,
-    "erc721NaomsaGas": 1172564
-  },
-  {
-    "erc721EnumerableGas": 239275,
-    "erc721AGas": 192899,
-    "erc721OZGas": 4931004,
-    "erc721NaomsaGas": 1198323
-  },
-  {
-    "erc721EnumerableGas": 240671,
-    "erc721AGas": 195239,
-    "erc721OZGas": 5045929,
-    "erc721NaomsaGas": 1224081
-  },
-  {
-    "erc721EnumerableGas": 242066,
-    "erc721AGas": 197579,
-    "erc721OZGas": 5160855,
-    "erc721NaomsaGas": 1249840
-  },
-  {
-    "erc721EnumerableGas": 243462,
-    "erc721AGas": 199919,
-    "erc721OZGas": 5275781,
-    "erc721NaomsaGas": 1275599
-  },
-  {
-    "erc721EnumerableGas": 244858,
-    "erc721AGas": 202259,
-    "erc721OZGas": 5390707,
-    "erc721NaomsaGas": 1301358
-  },
-  {
-    "erc721EnumerableGas": 246254,
-    "erc721AGas": 204599,
-    "erc721OZGas": 5505632,
-    "erc721NaomsaGas": 1327116
-  },
-  {
-    "erc721EnumerableGas": 270723,
-    "erc721AGas": 206939,
-    "erc721OZGas": 5620558,
-    "erc721NaomsaGas": 1352875
-  },
-  {
-    "erc721EnumerableGas": 272139,
-    "erc721AGas": 209279,
-    "erc721OZGas": 5735484,
-    "erc721NaomsaGas": 1378634
-  },
-  {
-    "erc721EnumerableGas": 273555,
-    "erc721AGas": 211619,
-    "erc721OZGas": 5850410,
-    "erc721NaomsaGas": 1404393
-  },
-  {
-    "erc721EnumerableGas": 274972,
-    "erc721AGas": 213959,
-    "erc721OZGas": 5965336,
-    "erc721NaomsaGas": 1430152
-  },
-  {
-    "erc721EnumerableGas": 276389,
-    "erc721AGas": 216299,
-    "erc721OZGas": 6080262,
-    "erc721NaomsaGas": 1455911
-  },
-  {
-    "erc721EnumerableGas": 277806,
-    "erc721AGas": 218639,
-    "erc721OZGas": 6195187,
-    "erc721NaomsaGas": 1481669
-  },
-  {
-    "erc721EnumerableGas": 279229,
-    "erc721AGas": 220979,
-    "erc721OZGas": 6310113,
-    "erc721NaomsaGas": 1507428
-  },
-  {
-    "erc721EnumerableGas": 280648,
-    "erc721AGas": 223319,
-    "erc721OZGas": 6425039,
-    "erc721NaomsaGas": 1533187
-  },
-  {
-    "erc721EnumerableGas": 282066,
-    "erc721AGas": 225659,
-    "erc721OZGas": 6539965,
-    "erc721NaomsaGas": 1558946
-  },
-  {
-    "erc721EnumerableGas": 283486,
-    "erc721AGas": 227999,
-    "erc721OZGas": 6654891,
-    "erc721NaomsaGas": 1584705
-  },
-  {
-    "erc721EnumerableGas": 284905,
-    "erc721AGas": 230339,
-    "erc721OZGas": 6769817,
-    "erc721NaomsaGas": 1610464
-  },
-  {
-    "erc721EnumerableGas": 286325,
-    "erc721AGas": 232679,
-    "erc721OZGas": 6884743,
-    "erc721NaomsaGas": 1636223
-  },
-  {
-    "erc721EnumerableGas": 287745,
-    "erc721AGas": 235019,
-    "erc721OZGas": 6999669,
-    "erc721NaomsaGas": 1661982
-  },
-  {
-    "erc721EnumerableGas": 289166,
-    "erc721AGas": 237359,
-    "erc721OZGas": 7114595,
-    "erc721NaomsaGas": 1687741
-  },
-  {
-    "erc721EnumerableGas": 290587,
-    "erc721AGas": 239699,
-    "erc721OZGas": 7229521,
-    "erc721NaomsaGas": 1713500
-  },
-  {
-    "erc721EnumerableGas": 292009,
-    "erc721AGas": 242039,
-    "erc721OZGas": 7344447,
-    "erc721NaomsaGas": 1739259
-  },
-  {
-    "erc721EnumerableGas": 338692,
-    "erc721AGas": 244379,
-    "erc721OZGas": 7459373,
-    "erc721NaomsaGas": 1765018
-  },
-  {
-    "erc721EnumerableGas": 340138,
-    "erc721AGas": 246719,
-    "erc721OZGas": 7574299,
-    "erc721NaomsaGas": 1790777
-  },
-  {
-    "erc721EnumerableGas": 341584,
-    "erc721AGas": 249059,
-    "erc721OZGas": 7689225,
-    "erc721NaomsaGas": 1816536
-  },
-  {
-    "erc721EnumerableGas": 343031,
-    "erc721AGas": 251399,
-    "erc721OZGas": 7804151,
-    "erc721NaomsaGas": 1842295
-  },
-  {
-    "erc721EnumerableGas": 344478,
-    "erc721AGas": 253739,
-    "erc721OZGas": 7919077,
-    "erc721NaomsaGas": 1868054
-  },
-  {
-    "erc721EnumerableGas": 345926,
-    "erc721AGas": 256079,
-    "erc721OZGas": 8034004,
-    "erc721NaomsaGas": 1893814
-  },
-  {
-    "erc721EnumerableGas": 347381,
-    "erc721AGas": 258419,
-    "erc721OZGas": 8148930,
-    "erc721NaomsaGas": 1919573
-  },
-  {
-    "erc721EnumerableGas": 348830,
-    "erc721AGas": 260759,
-    "erc721OZGas": 8263856,
-    "erc721NaomsaGas": 1945332
-  },
-  {
-    "erc721EnumerableGas": 350280,
-    "erc721AGas": 263099,
-    "erc721OZGas": 8378782,
-    "erc721NaomsaGas": 1971091
-  },
-  {
-    "erc721EnumerableGas": 351730,
-    "erc721AGas": 265439,
-    "erc721OZGas": 8493708,
-    "erc721NaomsaGas": 1996850
-  },
-  {
-    "erc721EnumerableGas": 353181,
-    "erc721AGas": 267779,
-    "erc721OZGas": 8608634,
-    "erc721NaomsaGas": 2022609
-  },
-  {
-    "erc721EnumerableGas": 354632,
-    "erc721AGas": 270119,
-    "erc721OZGas": 8723561,
-    "erc721NaomsaGas": 2048369
-  },
-  {
-    "erc721EnumerableGas": 356084,
-    "erc721AGas": 272459,
-    "erc721OZGas": 8838487,
-    "erc721NaomsaGas": 2074128
-  },
-  {
-    "erc721EnumerableGas": 357537,
-    "erc721AGas": 274799,
-    "erc721OZGas": 8953413,
-    "erc721NaomsaGas": 2099887
-  },
-  {
-    "erc721EnumerableGas": 358990,
-    "erc721AGas": 277139,
-    "erc721OZGas": 9068339,
-    "erc721NaomsaGas": 2125646
-  },
-  {
-    "erc721EnumerableGas": 360443,
-    "erc721AGas": 279479,
-    "erc721OZGas": 9183266,
-    "erc721NaomsaGas": 2151406
-  },
-  {
-    "erc721EnumerableGas": 385860,
-    "erc721AGas": 281819,
-    "erc721OZGas": 9298192,
-    "erc721NaomsaGas": 2177165
-  },
-  {
-    "erc721EnumerableGas": 387343,
-    "erc721AGas": 284159,
-    "erc721OZGas": 9413118,
-    "erc721NaomsaGas": 2202924
-  },
-  {
-    "erc721EnumerableGas": 388827,
-    "erc721AGas": 286499,
-    "erc721OZGas": 9528045,
-    "erc721NaomsaGas": 2228684
-  },
-  {
-    "erc721EnumerableGas": 390312,
-    "erc721AGas": 288839,
-    "erc721OZGas": 9642971,
-    "erc721NaomsaGas": 2254443
-  },
-  {
-    "erc721EnumerableGas": 391798,
-    "erc721AGas": 291179,
-    "erc721OZGas": 9757897,
-    "erc721NaomsaGas": 2280202
-  },
-  {
-    "erc721EnumerableGas": 393285,
-    "erc721AGas": 293519,
-    "erc721OZGas": 9872824,
-    "erc721NaomsaGas": 2305962
-  },
-  {
-    "erc721EnumerableGas": 394780,
-    "erc721AGas": 295859,
-    "erc721OZGas": 9987750,
-    "erc721NaomsaGas": 2331721
-  },
-  {
-    "erc721EnumerableGas": 396268,
-    "erc721AGas": 298199,
-    "erc721OZGas": 10102676,
-    "erc721NaomsaGas": 2357480
-  },
-  {
-    "erc721EnumerableGas": 397757,
-    "erc721AGas": 300539,
-    "erc721OZGas": 10217603,
-    "erc721NaomsaGas": 2383240
-  },
-  {
-    "erc721EnumerableGas": 399247,
-    "erc721AGas": 302879,
-    "erc721OZGas": 10332529,
-    "erc721NaomsaGas": 2408999
-  },
-  {
-    "erc721EnumerableGas": 400737,
-    "erc721AGas": 305219,
-    "erc721OZGas": 10447456,
-    "erc721NaomsaGas": 2434759
-  },
-  {
-    "erc721EnumerableGas": 402228,
-    "erc721AGas": 307559,
-    "erc721OZGas": 10562382,
-    "erc721NaomsaGas": 2460518
-  },
-  {
-    "erc721EnumerableGas": 403720,
-    "erc721AGas": 309899,
-    "erc721OZGas": 10677309,
-    "erc721NaomsaGas": 2486278
-  },
-  {
-    "erc721EnumerableGas": 405213,
-    "erc721AGas": 312239,
-    "erc721OZGas": 10792235,
-    "erc721NaomsaGas": 2512037
-  },
-  {
-    "erc721EnumerableGas": 406706,
-    "erc721AGas": 314579,
-    "erc721OZGas": 10907162,
-    "erc721NaomsaGas": 2537797
-  },
-  {
-    "erc721EnumerableGas": 408201,
-    "erc721AGas": 316919,
-    "erc721OZGas": 11022088,
-    "erc721NaomsaGas": 2563556
-  },
-  {
-    "erc721EnumerableGas": 456091,
-    "erc721AGas": 319259,
-    "erc721OZGas": 11137015,
-    "erc721NaomsaGas": 2589316
-  },
-  {
-    "erc721EnumerableGas": 457622,
-    "erc721AGas": 321599,
-    "erc721OZGas": 11251941,
-    "erc721NaomsaGas": 2615075
-  },
-  {
-    "erc721EnumerableGas": 459154,
-    "erc721AGas": 323939,
-    "erc721OZGas": 11366868,
-    "erc721NaomsaGas": 2640835
-  },
-  {
-    "erc721EnumerableGas": 460687,
-    "erc721AGas": 326279,
-    "erc721OZGas": 11481795,
-    "erc721NaomsaGas": 2666595
-  },
-  {
-    "erc721EnumerableGas": 462221,
-    "erc721AGas": 328619,
-    "erc721OZGas": 11596721,
-    "erc721NaomsaGas": 2692354
-  },
-  {
-    "erc721EnumerableGas": 463756,
-    "erc721AGas": 330959,
-    "erc721OZGas": 11711648,
-    "erc721NaomsaGas": 2718114
-  },
-  {
-    "erc721EnumerableGas": 465301,
-    "erc721AGas": 333299,
-    "erc721OZGas": 11826574,
-    "erc721NaomsaGas": 2743873
-  },
-  {
-    "erc721EnumerableGas": 466838,
-    "erc721AGas": 335639,
-    "erc721OZGas": 11941501,
-    "erc721NaomsaGas": 2769633
-  },
-  {
-    "erc721EnumerableGas": 468376,
-    "erc721AGas": 337979,
-    "erc721OZGas": 12056428,
-    "erc721NaomsaGas": 2795393
-  },
-  {
-    "erc721EnumerableGas": 469915,
-    "erc721AGas": 340319,
-    "erc721OZGas": 12171354,
-    "erc721NaomsaGas": 2821152
-  },
-  {
-    "erc721EnumerableGas": 471455,
-    "erc721AGas": 342659,
-    "erc721OZGas": 12286281,
-    "erc721NaomsaGas": 2846912
-  },
-  {
-    "erc721EnumerableGas": 472996,
-    "erc721AGas": 344999,
-    "erc721OZGas": 12401208,
-    "erc721NaomsaGas": 2872672
-  },
-  {
-    "erc721EnumerableGas": 474538,
-    "erc721AGas": 347339,
-    "erc721OZGas": 12516135,
-    "erc721NaomsaGas": 2898432
-  },
-  {
-    "erc721EnumerableGas": 476081,
-    "erc721AGas": 349679,
-    "erc721OZGas": 12631061,
-    "erc721NaomsaGas": 2924191
-  },
-  {
-    "erc721EnumerableGas": 477625,
-    "erc721AGas": 352019,
-    "erc721OZGas": 12745988,
-    "erc721NaomsaGas": 2949951
-  },
-  {
-    "erc721EnumerableGas": 479170,
-    "erc721AGas": 354359,
-    "erc721OZGas": 12860915,
-    "erc721NaomsaGas": 2975711
-  },
-  {
-    "erc721EnumerableGas": 506103,
-    "erc721AGas": 356699,
-    "erc721OZGas": 12975842,
-    "erc721NaomsaGas": 3001471
-  },
-  {
-    "erc721EnumerableGas": 507692,
-    "erc721AGas": 359039,
-    "erc721OZGas": 13090769,
-    "erc721NaomsaGas": 3027231
-  },
-  {
-    "erc721EnumerableGas": 509283,
-    "erc721AGas": 361379,
-    "erc721OZGas": 13205695,
-    "erc721NaomsaGas": 3052990
-  },
-  {
-    "erc721EnumerableGas": 510875,
-    "erc721AGas": 363719,
-    "erc721OZGas": 13320622,
-    "erc721NaomsaGas": 3078750
-  },
-  {
-    "erc721EnumerableGas": 512468,
-    "erc721AGas": 366059,
-    "erc721OZGas": 13435549,
-    "erc721NaomsaGas": 3104510
-  },
-  {
-    "erc721EnumerableGas": 514062,
-    "erc721AGas": 368399,
-    "erc721OZGas": 13550476,
-    "erc721NaomsaGas": 3130270
-  },
-  {
-    "erc721EnumerableGas": 515669,
-    "erc721AGas": 370739,
-    "erc721OZGas": 13665403,
-    "erc721NaomsaGas": 3156030
-  },
-  {
-    "erc721EnumerableGas": 517266,
-    "erc721AGas": 373079,
-    "erc721OZGas": 13780330,
-    "erc721NaomsaGas": 3181790
-  },
-  {
-    "erc721EnumerableGas": 518864,
-    "erc721AGas": 375419,
-    "erc721OZGas": 13895257,
-    "erc721NaomsaGas": 3207550
-  },
-  {
-    "erc721EnumerableGas": 520464,
-    "erc721AGas": 377759,
-    "erc721OZGas": 14010184,
-    "erc721NaomsaGas": 3233310
-  },
-  {
-    "erc721EnumerableGas": 522065,
-    "erc721AGas": 380099,
-    "erc721OZGas": 14125111,
-    "erc721NaomsaGas": 3259070
-  },
-  {
-    "erc721EnumerableGas": 523667,
-    "erc721AGas": 382439,
-    "erc721OZGas": 14240038,
-    "erc721NaomsaGas": 3284830
-  },
-  {
-    "erc721EnumerableGas": 525270,
-    "erc721AGas": 384779,
-    "erc721OZGas": 14354965,
-    "erc721NaomsaGas": 3310590
-  },
-  {
-    "erc721EnumerableGas": 526875,
-    "erc721AGas": 387119,
-    "erc721OZGas": 14469892,
-    "erc721NaomsaGas": 3336350
-  },
-  {
-    "erc721EnumerableGas": 528481,
-    "erc721AGas": 389459,
-    "erc721OZGas": 14584819,
-    "erc721NaomsaGas": 3362110
-  },
-  {
-    "erc721EnumerableGas": 530088,
-    "erc721AGas": 391799,
-    "erc721OZGas": 14699746,
-    "erc721NaomsaGas": 3387870
+    "ERC721BEnumerable": 94535,
+    "ERC721A": 94619,
+    "ERC721Naomsa": 116471,
+    "ERC721OZ": 72393,
+    "ERC721OZ16": 72671,
+    "ERC721OZEnumerable": 104138,
+    "ERC721OZ16Enumerable": 104801
+  },
+  {
+    "ERC721BEnumerable": 98138,
+    "ERC721A": 96959,
+    "ERC721Naomsa": 142229,
+    "ERC721OZ": 97873,
+    "ERC721OZ16": 98408,
+    "ERC721OZEnumerable": 219063,
+    "ERC721OZ16Enumerable": 218418
+  },
+  {
+    "ERC721BEnumerable": 101742,
+    "ERC721A": 99299,
+    "ERC721Naomsa": 167987,
+    "ERC721OZ": 123353,
+    "ERC721OZ16": 124145,
+    "ERC721OZEnumerable": 333988,
+    "ERC721OZ16Enumerable": 312135
+  },
+  {
+    "ERC721BEnumerable": 105346,
+    "ERC721A": 101639,
+    "ERC721Naomsa": 193745,
+    "ERC721OZ": 148833,
+    "ERC721OZ16": 149882,
+    "ERC721OZEnumerable": 448913,
+    "ERC721OZ16Enumerable": 405852
+  },
+  {
+    "ERC721BEnumerable": 108950,
+    "ERC721A": 103979,
+    "ERC721Naomsa": 219503,
+    "ERC721OZ": 174313,
+    "ERC721OZ16": 175619,
+    "ERC721OZEnumerable": 563838,
+    "ERC721OZ16Enumerable": 499569
+  },
+  {
+    "ERC721BEnumerable": 112554,
+    "ERC721A": 106319,
+    "ERC721Naomsa": 245261,
+    "ERC721OZ": 199793,
+    "ERC721OZ16": 201356,
+    "ERC721OZEnumerable": 678763,
+    "ERC721OZ16Enumerable": 593286
+  },
+  {
+    "ERC721BEnumerable": 116161,
+    "ERC721A": 108659,
+    "ERC721Naomsa": 271019,
+    "ERC721OZ": 225273,
+    "ERC721OZ16": 227093,
+    "ERC721OZEnumerable": 793688,
+    "ERC721OZ16Enumerable": 687003
+  },
+  {
+    "ERC721BEnumerable": 119765,
+    "ERC721A": 110999,
+    "ERC721Naomsa": 296777,
+    "ERC721OZ": 250753,
+    "ERC721OZ16": 252830,
+    "ERC721OZEnumerable": 908613,
+    "ERC721OZ16Enumerable": 780720
+  },
+  {
+    "ERC721BEnumerable": 123370,
+    "ERC721A": 113339,
+    "ERC721Naomsa": 322536,
+    "ERC721OZ": 276234,
+    "ERC721OZ16": 278568,
+    "ERC721OZEnumerable": 1023539,
+    "ERC721OZ16Enumerable": 874438
+  },
+  {
+    "ERC721BEnumerable": 126974,
+    "ERC721A": 115679,
+    "ERC721Naomsa": 348294,
+    "ERC721OZ": 301714,
+    "ERC721OZ16": 304305,
+    "ERC721OZEnumerable": 1138464,
+    "ERC721OZ16Enumerable": 968155
+  },
+  {
+    "ERC721BEnumerable": 130579,
+    "ERC721A": 118019,
+    "ERC721Naomsa": 374052,
+    "ERC721OZ": 327194,
+    "ERC721OZ16": 330042,
+    "ERC721OZEnumerable": 1253389,
+    "ERC721OZ16Enumerable": 1061872
+  },
+  {
+    "ERC721BEnumerable": 134184,
+    "ERC721A": 120359,
+    "ERC721Naomsa": 399810,
+    "ERC721OZ": 352674,
+    "ERC721OZ16": 355779,
+    "ERC721OZEnumerable": 1368314,
+    "ERC721OZ16Enumerable": 1155589
+  },
+  {
+    "ERC721BEnumerable": 137789,
+    "ERC721A": 122699,
+    "ERC721Naomsa": 425568,
+    "ERC721OZ": 378154,
+    "ERC721OZ16": 381516,
+    "ERC721OZEnumerable": 1483239,
+    "ERC721OZ16Enumerable": 1249306
+  },
+  {
+    "ERC721BEnumerable": 141394,
+    "ERC721A": 125039,
+    "ERC721Naomsa": 451327,
+    "ERC721OZ": 403635,
+    "ERC721OZ16": 407254,
+    "ERC721OZEnumerable": 1598165,
+    "ERC721OZ16Enumerable": 1343024
+  },
+  {
+    "ERC721BEnumerable": 144999,
+    "ERC721A": 127379,
+    "ERC721Naomsa": 477085,
+    "ERC721OZ": 429115,
+    "ERC721OZ16": 432991,
+    "ERC721OZEnumerable": 1713090,
+    "ERC721OZ16Enumerable": 1436741
+  },
+  {
+    "ERC721BEnumerable": 170807,
+    "ERC721A": 129719,
+    "ERC721Naomsa": 502843,
+    "ERC721OZ": 454595,
+    "ERC721OZ16": 458728,
+    "ERC721OZEnumerable": 1828015,
+    "ERC721OZ16Enumerable": 1530458
+  },
+  {
+    "ERC721BEnumerable": 197054,
+    "ERC721A": 132059,
+    "ERC721Naomsa": 528601,
+    "ERC721OZ": 480075,
+    "ERC721OZ16": 484465,
+    "ERC721OZEnumerable": 1942940,
+    "ERC721OZ16Enumerable": 1646025
+  },
+  {
+    "ERC721BEnumerable": 200681,
+    "ERC721A": 134399,
+    "ERC721Naomsa": 554360,
+    "ERC721OZ": 505556,
+    "ERC721OZ16": 510203,
+    "ERC721OZEnumerable": 2057866,
+    "ERC721OZ16Enumerable": 1739743
+  },
+  {
+    "ERC721BEnumerable": 204308,
+    "ERC721A": 136739,
+    "ERC721Naomsa": 580118,
+    "ERC721OZ": 531036,
+    "ERC721OZ16": 535940,
+    "ERC721OZEnumerable": 2172791,
+    "ERC721OZ16Enumerable": 1833460
+  },
+  {
+    "ERC721BEnumerable": 207936,
+    "ERC721A": 139079,
+    "ERC721Naomsa": 605876,
+    "ERC721OZ": 556516,
+    "ERC721OZ16": 561677,
+    "ERC721OZEnumerable": 2287716,
+    "ERC721OZ16Enumerable": 1927177
+  },
+  {
+    "ERC721BEnumerable": 211563,
+    "ERC721A": 141419,
+    "ERC721Naomsa": 631635,
+    "ERC721OZ": 581997,
+    "ERC721OZ16": 587415,
+    "ERC721OZEnumerable": 2402642,
+    "ERC721OZ16Enumerable": 2020895
+  },
+  {
+    "ERC721BEnumerable": 215192,
+    "ERC721A": 143759,
+    "ERC721Naomsa": 657393,
+    "ERC721OZ": 607477,
+    "ERC721OZ16": 613152,
+    "ERC721OZEnumerable": 2517567,
+    "ERC721OZ16Enumerable": 2114612
+  },
+  {
+    "ERC721BEnumerable": 218824,
+    "ERC721A": 146099,
+    "ERC721Naomsa": 683152,
+    "ERC721OZ": 632958,
+    "ERC721OZ16": 638890,
+    "ERC721OZEnumerable": 2632493,
+    "ERC721OZ16Enumerable": 2208330
+  },
+  {
+    "ERC721BEnumerable": 222453,
+    "ERC721A": 148439,
+    "ERC721Naomsa": 708910,
+    "ERC721OZ": 658438,
+    "ERC721OZ16": 664627,
+    "ERC721OZEnumerable": 2747418,
+    "ERC721OZ16Enumerable": 2302047
+  },
+  {
+    "ERC721BEnumerable": 226082,
+    "ERC721A": 150779,
+    "ERC721Naomsa": 734668,
+    "ERC721OZ": 683918,
+    "ERC721OZ16": 690364,
+    "ERC721OZEnumerable": 2862343,
+    "ERC721OZ16Enumerable": 2395764
+  },
+  {
+    "ERC721BEnumerable": 229712,
+    "ERC721A": 153119,
+    "ERC721Naomsa": 760427,
+    "ERC721OZ": 709399,
+    "ERC721OZ16": 716102,
+    "ERC721OZEnumerable": 2977269,
+    "ERC721OZ16Enumerable": 2489482
+  },
+  {
+    "ERC721BEnumerable": 233342,
+    "ERC721A": 155459,
+    "ERC721Naomsa": 786185,
+    "ERC721OZ": 734879,
+    "ERC721OZ16": 741839,
+    "ERC721OZEnumerable": 3092194,
+    "ERC721OZ16Enumerable": 2583199
+  },
+  {
+    "ERC721BEnumerable": 236972,
+    "ERC721A": 157799,
+    "ERC721Naomsa": 811944,
+    "ERC721OZ": 760360,
+    "ERC721OZ16": 767577,
+    "ERC721OZEnumerable": 3207120,
+    "ERC721OZ16Enumerable": 2676917
+  },
+  {
+    "ERC721BEnumerable": 240602,
+    "ERC721A": 160139,
+    "ERC721Naomsa": 837702,
+    "ERC721OZ": 785840,
+    "ERC721OZ16": 793314,
+    "ERC721OZEnumerable": 3322045,
+    "ERC721OZ16Enumerable": 2770634
+  },
+  {
+    "ERC721BEnumerable": 244233,
+    "ERC721A": 162479,
+    "ERC721Naomsa": 863461,
+    "ERC721OZ": 811321,
+    "ERC721OZ16": 819052,
+    "ERC721OZEnumerable": 3436971,
+    "ERC721OZ16Enumerable": 2864352
+  },
+  {
+    "ERC721BEnumerable": 247864,
+    "ERC721A": 164819,
+    "ERC721Naomsa": 889219,
+    "ERC721OZ": 836801,
+    "ERC721OZ16": 844789,
+    "ERC721OZEnumerable": 3551896,
+    "ERC721OZ16Enumerable": 2958069
+  },
+  {
+    "ERC721BEnumerable": 251495,
+    "ERC721A": 167159,
+    "ERC721Naomsa": 914978,
+    "ERC721OZ": 862282,
+    "ERC721OZ16": 870527,
+    "ERC721OZEnumerable": 3666822,
+    "ERC721OZ16Enumerable": 3051787
+  },
+  {
+    "ERC721BEnumerable": 299969,
+    "ERC721A": 169499,
+    "ERC721Naomsa": 940736,
+    "ERC721OZ": 887762,
+    "ERC721OZ16": 896264,
+    "ERC721OZEnumerable": 3781747,
+    "ERC721OZ16Enumerable": 3167354
+  },
+  {
+    "ERC721BEnumerable": 303627,
+    "ERC721A": 171839,
+    "ERC721Naomsa": 966495,
+    "ERC721OZ": 913243,
+    "ERC721OZ16": 922002,
+    "ERC721OZEnumerable": 3896673,
+    "ERC721OZ16Enumerable": 3261072
+  },
+  {
+    "ERC721BEnumerable": 307286,
+    "ERC721A": 174179,
+    "ERC721Naomsa": 992253,
+    "ERC721OZ": 938723,
+    "ERC721OZ16": 947739,
+    "ERC721OZEnumerable": 4011598,
+    "ERC721OZ16Enumerable": 3354789
+  },
+  {
+    "ERC721BEnumerable": 310946,
+    "ERC721A": 176519,
+    "ERC721Naomsa": 1018012,
+    "ERC721OZ": 964204,
+    "ERC721OZ16": 973477,
+    "ERC721OZEnumerable": 4126524,
+    "ERC721OZ16Enumerable": 3448507
+  },
+  {
+    "ERC721BEnumerable": 314606,
+    "ERC721A": 178859,
+    "ERC721Naomsa": 1043771,
+    "ERC721OZ": 989685,
+    "ERC721OZ16": 999215,
+    "ERC721OZEnumerable": 4241450,
+    "ERC721OZ16Enumerable": 3542225
+  },
+  {
+    "ERC721BEnumerable": 318267,
+    "ERC721A": 181199,
+    "ERC721Naomsa": 1069529,
+    "ERC721OZ": 1015165,
+    "ERC721OZ16": 1024952,
+    "ERC721OZEnumerable": 4356375,
+    "ERC721OZ16Enumerable": 3635942
+  },
+  {
+    "ERC721BEnumerable": 321933,
+    "ERC721A": 183539,
+    "ERC721Naomsa": 1095288,
+    "ERC721OZ": 1040646,
+    "ERC721OZ16": 1050690,
+    "ERC721OZEnumerable": 4471301,
+    "ERC721OZ16Enumerable": 3729660
+  },
+  {
+    "ERC721BEnumerable": 325595,
+    "ERC721A": 185879,
+    "ERC721Naomsa": 1121047,
+    "ERC721OZ": 1066127,
+    "ERC721OZ16": 1076428,
+    "ERC721OZEnumerable": 4586227,
+    "ERC721OZ16Enumerable": 3823378
+  },
+  {
+    "ERC721BEnumerable": 329258,
+    "ERC721A": 188219,
+    "ERC721Naomsa": 1146805,
+    "ERC721OZ": 1091607,
+    "ERC721OZ16": 1102165,
+    "ERC721OZEnumerable": 4701152,
+    "ERC721OZ16Enumerable": 3917095
+  },
+  {
+    "ERC721BEnumerable": 332921,
+    "ERC721A": 190559,
+    "ERC721Naomsa": 1172564,
+    "ERC721OZ": 1117088,
+    "ERC721OZ16": 1127903,
+    "ERC721OZEnumerable": 4816078,
+    "ERC721OZ16Enumerable": 4010813
+  },
+  {
+    "ERC721BEnumerable": 336584,
+    "ERC721A": 192899,
+    "ERC721Naomsa": 1198323,
+    "ERC721OZ": 1142569,
+    "ERC721OZ16": 1153641,
+    "ERC721OZEnumerable": 4931004,
+    "ERC721OZ16Enumerable": 4104531
+  },
+  {
+    "ERC721BEnumerable": 340248,
+    "ERC721A": 195239,
+    "ERC721Naomsa": 1224081,
+    "ERC721OZ": 1168049,
+    "ERC721OZ16": 1179378,
+    "ERC721OZEnumerable": 5045929,
+    "ERC721OZ16Enumerable": 4198248
+  },
+  {
+    "ERC721BEnumerable": 343913,
+    "ERC721A": 197579,
+    "ERC721Naomsa": 1249840,
+    "ERC721OZ": 1193530,
+    "ERC721OZ16": 1205116,
+    "ERC721OZEnumerable": 5160855,
+    "ERC721OZ16Enumerable": 4291966
+  },
+  {
+    "ERC721BEnumerable": 347578,
+    "ERC721A": 199919,
+    "ERC721Naomsa": 1275599,
+    "ERC721OZ": 1219011,
+    "ERC721OZ16": 1230854,
+    "ERC721OZEnumerable": 5275781,
+    "ERC721OZ16Enumerable": 4385684
+  },
+  {
+    "ERC721BEnumerable": 351244,
+    "ERC721A": 202259,
+    "ERC721Naomsa": 1301358,
+    "ERC721OZ": 1244492,
+    "ERC721OZ16": 1256592,
+    "ERC721OZEnumerable": 5390707,
+    "ERC721OZ16Enumerable": 4479402
+  },
+  {
+    "ERC721BEnumerable": 354911,
+    "ERC721A": 204599,
+    "ERC721Naomsa": 1327116,
+    "ERC721OZ": 1269972,
+    "ERC721OZ16": 1282329,
+    "ERC721OZEnumerable": 5505632,
+    "ERC721OZ16Enumerable": 4573119
+  },
+  {
+    "ERC721BEnumerable": 382158,
+    "ERC721A": 206939,
+    "ERC721Naomsa": 1352875,
+    "ERC721OZ": 1295453,
+    "ERC721OZ16": 1308067,
+    "ERC721OZEnumerable": 5620558,
+    "ERC721OZ16Enumerable": 4688687
+  },
+  {
+    "ERC721BEnumerable": 385860,
+    "ERC721A": 209279,
+    "ERC721Naomsa": 1378634,
+    "ERC721OZ": 1320934,
+    "ERC721OZ16": 1333805,
+    "ERC721OZEnumerable": 5735484,
+    "ERC721OZ16Enumerable": 4782405
+  },
+  {
+    "ERC721BEnumerable": 389562,
+    "ERC721A": 211619,
+    "ERC721Naomsa": 1404393,
+    "ERC721OZ": 1346415,
+    "ERC721OZ16": 1359543,
+    "ERC721OZEnumerable": 5850410,
+    "ERC721OZ16Enumerable": 4876123
+  },
+  {
+    "ERC721BEnumerable": 393265,
+    "ERC721A": 213959,
+    "ERC721Naomsa": 1430152,
+    "ERC721OZ": 1371896,
+    "ERC721OZ16": 1385281,
+    "ERC721OZEnumerable": 5965336,
+    "ERC721OZ16Enumerable": 4969841
+  },
+  {
+    "ERC721BEnumerable": 396969,
+    "ERC721A": 216299,
+    "ERC721Naomsa": 1455911,
+    "ERC721OZ": 1397377,
+    "ERC721OZ16": 1411019,
+    "ERC721OZEnumerable": 6080262,
+    "ERC721OZ16Enumerable": 5063559
+  },
+  {
+    "ERC721BEnumerable": 400674,
+    "ERC721A": 218639,
+    "ERC721Naomsa": 1481669,
+    "ERC721OZ": 1422857,
+    "ERC721OZ16": 1436756,
+    "ERC721OZEnumerable": 6195187,
+    "ERC721OZ16Enumerable": 5157276
+  },
+  {
+    "ERC721BEnumerable": 404386,
+    "ERC721A": 220979,
+    "ERC721Naomsa": 1507428,
+    "ERC721OZ": 1448338,
+    "ERC721OZ16": 1462494,
+    "ERC721OZEnumerable": 6310113,
+    "ERC721OZ16Enumerable": 5250994
+  },
+  {
+    "ERC721BEnumerable": 408093,
+    "ERC721A": 223319,
+    "ERC721Naomsa": 1533187,
+    "ERC721OZ": 1473819,
+    "ERC721OZ16": 1488232,
+    "ERC721OZEnumerable": 6425039,
+    "ERC721OZ16Enumerable": 5344712
+  },
+  {
+    "ERC721BEnumerable": 411801,
+    "ERC721A": 225659,
+    "ERC721Naomsa": 1558946,
+    "ERC721OZ": 1499300,
+    "ERC721OZ16": 1513970,
+    "ERC721OZEnumerable": 6539965,
+    "ERC721OZ16Enumerable": 5438430
+  },
+  {
+    "ERC721BEnumerable": 415509,
+    "ERC721A": 227999,
+    "ERC721Naomsa": 1584705,
+    "ERC721OZ": 1524781,
+    "ERC721OZ16": 1539708,
+    "ERC721OZEnumerable": 6654891,
+    "ERC721OZ16Enumerable": 5532148
+  },
+  {
+    "ERC721BEnumerable": 419219,
+    "ERC721A": 230339,
+    "ERC721Naomsa": 1610464,
+    "ERC721OZ": 1550262,
+    "ERC721OZ16": 1565446,
+    "ERC721OZEnumerable": 6769817,
+    "ERC721OZ16Enumerable": 5625866
+  },
+  {
+    "ERC721BEnumerable": 422929,
+    "ERC721A": 232679,
+    "ERC721Naomsa": 1636223,
+    "ERC721OZ": 1575743,
+    "ERC721OZ16": 1591184,
+    "ERC721OZEnumerable": 6884743,
+    "ERC721OZ16Enumerable": 5719584
+  },
+  {
+    "ERC721BEnumerable": 426640,
+    "ERC721A": 235019,
+    "ERC721Naomsa": 1661982,
+    "ERC721OZ": 1601224,
+    "ERC721OZ16": 1616922,
+    "ERC721OZEnumerable": 6999669,
+    "ERC721OZ16Enumerable": 5813302
+  },
+  {
+    "ERC721BEnumerable": 430352,
+    "ERC721A": 237359,
+    "ERC721Naomsa": 1687741,
+    "ERC721OZ": 1626705,
+    "ERC721OZ16": 1642660,
+    "ERC721OZEnumerable": 7114595,
+    "ERC721OZ16Enumerable": 5907020
+  },
+  {
+    "ERC721BEnumerable": 434065,
+    "ERC721A": 239699,
+    "ERC721Naomsa": 1713500,
+    "ERC721OZ": 1652186,
+    "ERC721OZ16": 1668398,
+    "ERC721OZEnumerable": 7229521,
+    "ERC721OZ16Enumerable": 6000738
+  },
+  {
+    "ERC721BEnumerable": 437779,
+    "ERC721A": 242039,
+    "ERC721Naomsa": 1739259,
+    "ERC721OZ": 1677667,
+    "ERC721OZ16": 1694136,
+    "ERC721OZEnumerable": 7344447,
+    "ERC721OZ16Enumerable": 6094456
+  },
+  {
+    "ERC721BEnumerable": 487605,
+    "ERC721A": 244379,
+    "ERC721Naomsa": 1765018,
+    "ERC721OZ": 1703148,
+    "ERC721OZ16": 1719874,
+    "ERC721OZEnumerable": 7459373,
+    "ERC721OZ16Enumerable": 6210024
+  },
+  {
+    "ERC721BEnumerable": 491364,
+    "ERC721A": 246719,
+    "ERC721Naomsa": 1790777,
+    "ERC721OZ": 1728629,
+    "ERC721OZ16": 1745612,
+    "ERC721OZEnumerable": 7574299,
+    "ERC721OZ16Enumerable": 6303742
+  },
+  {
+    "ERC721BEnumerable": 495125,
+    "ERC721A": 249059,
+    "ERC721Naomsa": 1816536,
+    "ERC721OZ": 1754110,
+    "ERC721OZ16": 1771350,
+    "ERC721OZEnumerable": 7689225,
+    "ERC721OZ16Enumerable": 6397460
+  },
+  {
+    "ERC721BEnumerable": 498886,
+    "ERC721A": 251399,
+    "ERC721Naomsa": 1842295,
+    "ERC721OZ": 1779591,
+    "ERC721OZ16": 1797088,
+    "ERC721OZEnumerable": 7804151,
+    "ERC721OZ16Enumerable": 6491178
+  },
+  {
+    "ERC721BEnumerable": 502649,
+    "ERC721A": 253739,
+    "ERC721Naomsa": 1868054,
+    "ERC721OZ": 1805072,
+    "ERC721OZ16": 1822826,
+    "ERC721OZEnumerable": 7919077,
+    "ERC721OZ16Enumerable": 6584896
+  },
+  {
+    "ERC721BEnumerable": 506414,
+    "ERC721A": 256079,
+    "ERC721Naomsa": 1893814,
+    "ERC721OZ": 1830554,
+    "ERC721OZ16": 1848565,
+    "ERC721OZEnumerable": 8034004,
+    "ERC721OZ16Enumerable": 6678615
+  },
+  {
+    "ERC721BEnumerable": 510187,
+    "ERC721A": 258419,
+    "ERC721Naomsa": 1919573,
+    "ERC721OZ": 1856035,
+    "ERC721OZ16": 1874303,
+    "ERC721OZEnumerable": 8148930,
+    "ERC721OZ16Enumerable": 6772333
+  },
+  {
+    "ERC721BEnumerable": 513954,
+    "ERC721A": 260759,
+    "ERC721Naomsa": 1945332,
+    "ERC721OZ": 1881516,
+    "ERC721OZ16": 1900041,
+    "ERC721OZEnumerable": 8263856,
+    "ERC721OZ16Enumerable": 6866051
+  },
+  {
+    "ERC721BEnumerable": 517722,
+    "ERC721A": 263099,
+    "ERC721Naomsa": 1971091,
+    "ERC721OZ": 1906997,
+    "ERC721OZ16": 1925779,
+    "ERC721OZEnumerable": 8378782,
+    "ERC721OZ16Enumerable": 6959769
+  },
+  {
+    "ERC721BEnumerable": 521491,
+    "ERC721A": 265439,
+    "ERC721Naomsa": 1996850,
+    "ERC721OZ": 1932478,
+    "ERC721OZ16": 1951517,
+    "ERC721OZEnumerable": 8493708,
+    "ERC721OZ16Enumerable": 7053487
+  },
+  {
+    "ERC721BEnumerable": 525262,
+    "ERC721A": 267779,
+    "ERC721Naomsa": 2022609,
+    "ERC721OZ": 1957959,
+    "ERC721OZ16": 1977255,
+    "ERC721OZEnumerable": 8608634,
+    "ERC721OZ16Enumerable": 7147205
+  },
+  {
+    "ERC721BEnumerable": 529034,
+    "ERC721A": 270119,
+    "ERC721Naomsa": 2048369,
+    "ERC721OZ": 1983441,
+    "ERC721OZ16": 2002994,
+    "ERC721OZEnumerable": 8723561,
+    "ERC721OZ16Enumerable": 7240924
+  },
+  {
+    "ERC721BEnumerable": 532807,
+    "ERC721A": 272459,
+    "ERC721Naomsa": 2074128,
+    "ERC721OZ": 2008922,
+    "ERC721OZ16": 2028732,
+    "ERC721OZEnumerable": 8838487,
+    "ERC721OZ16Enumerable": 7334642
+  },
+  {
+    "ERC721BEnumerable": 536581,
+    "ERC721A": 274799,
+    "ERC721Naomsa": 2099887,
+    "ERC721OZ": 2034403,
+    "ERC721OZ16": 2054470,
+    "ERC721OZEnumerable": 8953413,
+    "ERC721OZ16Enumerable": 7428360
+  },
+  {
+    "ERC721BEnumerable": 540357,
+    "ERC721A": 277139,
+    "ERC721Naomsa": 2125646,
+    "ERC721OZ": 2059884,
+    "ERC721OZ16": 2080208,
+    "ERC721OZEnumerable": 9068339,
+    "ERC721OZ16Enumerable": 7522078
+  },
+  {
+    "ERC721BEnumerable": 544134,
+    "ERC721A": 279479,
+    "ERC721Naomsa": 2151406,
+    "ERC721OZ": 2085366,
+    "ERC721OZ16": 2105947,
+    "ERC721OZEnumerable": 9183266,
+    "ERC721OZ16Enumerable": 7615797
+  },
+  {
+    "ERC721BEnumerable": 573201,
+    "ERC721A": 281819,
+    "ERC721Naomsa": 2177165,
+    "ERC721OZ": 2110847,
+    "ERC721OZ16": 2131685,
+    "ERC721OZEnumerable": 9298192,
+    "ERC721OZ16Enumerable": 7731365
+  },
+  {
+    "ERC721BEnumerable": 577036,
+    "ERC721A": 284159,
+    "ERC721Naomsa": 2202924,
+    "ERC721OZ": 2136328,
+    "ERC721OZ16": 2157423,
+    "ERC721OZEnumerable": 9413118,
+    "ERC721OZ16Enumerable": 7825083
+  },
+  {
+    "ERC721BEnumerable": 580873,
+    "ERC721A": 286499,
+    "ERC721Naomsa": 2228684,
+    "ERC721OZ": 2161810,
+    "ERC721OZ16": 2183162,
+    "ERC721OZEnumerable": 9528045,
+    "ERC721OZ16Enumerable": 7918802
+  },
+  {
+    "ERC721BEnumerable": 584712,
+    "ERC721A": 288839,
+    "ERC721Naomsa": 2254443,
+    "ERC721OZ": 2187291,
+    "ERC721OZ16": 2208900,
+    "ERC721OZEnumerable": 9642971,
+    "ERC721OZ16Enumerable": 8012520
+  },
+  {
+    "ERC721BEnumerable": 588552,
+    "ERC721A": 291179,
+    "ERC721Naomsa": 2280202,
+    "ERC721OZ": 2212772,
+    "ERC721OZ16": 2234638,
+    "ERC721OZEnumerable": 9757897,
+    "ERC721OZ16Enumerable": 8106238
+  },
+  {
+    "ERC721BEnumerable": 592394,
+    "ERC721A": 293519,
+    "ERC721Naomsa": 2305962,
+    "ERC721OZ": 2238254,
+    "ERC721OZ16": 2260377,
+    "ERC721OZEnumerable": 9872824,
+    "ERC721OZ16Enumerable": 8199957
+  },
+  {
+    "ERC721BEnumerable": 596248,
+    "ERC721A": 295859,
+    "ERC721Naomsa": 2331721,
+    "ERC721OZ": 2263735,
+    "ERC721OZ16": 2286115,
+    "ERC721OZEnumerable": 9987750,
+    "ERC721OZ16Enumerable": 8293675
+  },
+  {
+    "ERC721BEnumerable": 600093,
+    "ERC721A": 298199,
+    "ERC721Naomsa": 2357480,
+    "ERC721OZ": 2289216,
+    "ERC721OZ16": 2311853,
+    "ERC721OZEnumerable": 10102676,
+    "ERC721OZ16Enumerable": 8387393
+  },
+  {
+    "ERC721BEnumerable": 603940,
+    "ERC721A": 300539,
+    "ERC721Naomsa": 2383240,
+    "ERC721OZ": 2314698,
+    "ERC721OZ16": 2337592,
+    "ERC721OZEnumerable": 10217603,
+    "ERC721OZ16Enumerable": 8481112
+  },
+  {
+    "ERC721BEnumerable": 607789,
+    "ERC721A": 302879,
+    "ERC721Naomsa": 2408999,
+    "ERC721OZ": 2340179,
+    "ERC721OZ16": 2363330,
+    "ERC721OZEnumerable": 10332529,
+    "ERC721OZ16Enumerable": 8574830
+  },
+  {
+    "ERC721BEnumerable": 611640,
+    "ERC721A": 305219,
+    "ERC721Naomsa": 2434759,
+    "ERC721OZ": 2365661,
+    "ERC721OZ16": 2389069,
+    "ERC721OZEnumerable": 10447456,
+    "ERC721OZ16Enumerable": 8668549
+  },
+  {
+    "ERC721BEnumerable": 615492,
+    "ERC721A": 307559,
+    "ERC721Naomsa": 2460518,
+    "ERC721OZ": 2391142,
+    "ERC721OZ16": 2414807,
+    "ERC721OZEnumerable": 10562382,
+    "ERC721OZ16Enumerable": 8762267
+  },
+  {
+    "ERC721BEnumerable": 619346,
+    "ERC721A": 309899,
+    "ERC721Naomsa": 2486278,
+    "ERC721OZ": 2416624,
+    "ERC721OZ16": 2440546,
+    "ERC721OZEnumerable": 10677309,
+    "ERC721OZ16Enumerable": 8855986
+  },
+  {
+    "ERC721BEnumerable": 623202,
+    "ERC721A": 312239,
+    "ERC721Naomsa": 2512037,
+    "ERC721OZ": 2442105,
+    "ERC721OZ16": 2466284,
+    "ERC721OZEnumerable": 10792235,
+    "ERC721OZ16Enumerable": 8949704
+  },
+  {
+    "ERC721BEnumerable": 627060,
+    "ERC721A": 314579,
+    "ERC721Naomsa": 2537797,
+    "ERC721OZ": 2467587,
+    "ERC721OZ16": 2492023,
+    "ERC721OZEnumerable": 10907162,
+    "ERC721OZ16Enumerable": 9043423
+  },
+  {
+    "ERC721BEnumerable": 630919,
+    "ERC721A": 316919,
+    "ERC721Naomsa": 2563556,
+    "ERC721OZ": 2493068,
+    "ERC721OZ16": 2517761,
+    "ERC721OZEnumerable": 11022088,
+    "ERC721OZ16Enumerable": 9137141
+  },
+  {
+    "ERC721BEnumerable": 683147,
+    "ERC721A": 319259,
+    "ERC721Naomsa": 2589316,
+    "ERC721OZ": 2518550,
+    "ERC721OZ16": 2543500,
+    "ERC721OZEnumerable": 11137015,
+    "ERC721OZ16Enumerable": 9252710
+  },
+  {
+    "ERC721BEnumerable": 687079,
+    "ERC721A": 321599,
+    "ERC721Naomsa": 2615075,
+    "ERC721OZ": 2544031,
+    "ERC721OZ16": 2569238,
+    "ERC721OZEnumerable": 11251941,
+    "ERC721OZ16Enumerable": 9346428
+  },
+  {
+    "ERC721BEnumerable": 691014,
+    "ERC721A": 323939,
+    "ERC721Naomsa": 2640835,
+    "ERC721OZ": 2569513,
+    "ERC721OZ16": 2594977,
+    "ERC721OZEnumerable": 11366868,
+    "ERC721OZ16Enumerable": 9440147
+  },
+  {
+    "ERC721BEnumerable": 694951,
+    "ERC721A": 326279,
+    "ERC721Naomsa": 2666595,
+    "ERC721OZ": 2594995,
+    "ERC721OZ16": 2620716,
+    "ERC721OZEnumerable": 11481795,
+    "ERC721OZ16Enumerable": 9533866
+  },
+  {
+    "ERC721BEnumerable": 698890,
+    "ERC721A": 328619,
+    "ERC721Naomsa": 2692354,
+    "ERC721OZ": 2620476,
+    "ERC721OZ16": 2646454,
+    "ERC721OZEnumerable": 11596721,
+    "ERC721OZ16Enumerable": 9627584
+  },
+  {
+    "ERC721BEnumerable": 702831,
+    "ERC721A": 330959,
+    "ERC721Naomsa": 2718114,
+    "ERC721OZ": 2645958,
+    "ERC721OZ16": 2672193,
+    "ERC721OZEnumerable": 11711648,
+    "ERC721OZ16Enumerable": 9721303
+  },
+  {
+    "ERC721BEnumerable": 706788,
+    "ERC721A": 333299,
+    "ERC721Naomsa": 2743873,
+    "ERC721OZ": 2671439,
+    "ERC721OZ16": 2697931,
+    "ERC721OZEnumerable": 11826574,
+    "ERC721OZ16Enumerable": 9815021
+  },
+  {
+    "ERC721BEnumerable": 710734,
+    "ERC721A": 335639,
+    "ERC721Naomsa": 2769633,
+    "ERC721OZ": 2696921,
+    "ERC721OZ16": 2723670,
+    "ERC721OZEnumerable": 11941501,
+    "ERC721OZ16Enumerable": 9908740
+  },
+  {
+    "ERC721BEnumerable": 714682,
+    "ERC721A": 337979,
+    "ERC721Naomsa": 2795393,
+    "ERC721OZ": 2722403,
+    "ERC721OZ16": 2749409,
+    "ERC721OZEnumerable": 12056428,
+    "ERC721OZ16Enumerable": 10002459
+  },
+  {
+    "ERC721BEnumerable": 718633,
+    "ERC721A": 340319,
+    "ERC721Naomsa": 2821152,
+    "ERC721OZ": 2747884,
+    "ERC721OZ16": 2775147,
+    "ERC721OZEnumerable": 12171354,
+    "ERC721OZ16Enumerable": 10096177
+  },
+  {
+    "ERC721BEnumerable": 722585,
+    "ERC721A": 342659,
+    "ERC721Naomsa": 2846912,
+    "ERC721OZ": 2773366,
+    "ERC721OZ16": 2800886,
+    "ERC721OZEnumerable": 12286281,
+    "ERC721OZ16Enumerable": 10189896
+  },
+  {
+    "ERC721BEnumerable": 726540,
+    "ERC721A": 344999,
+    "ERC721Naomsa": 2872672,
+    "ERC721OZ": 2798848,
+    "ERC721OZ16": 2826625,
+    "ERC721OZEnumerable": 12401208,
+    "ERC721OZ16Enumerable": 10283615
+  },
+  {
+    "ERC721BEnumerable": 730498,
+    "ERC721A": 347339,
+    "ERC721Naomsa": 2898432,
+    "ERC721OZ": 2824330,
+    "ERC721OZ16": 2852364,
+    "ERC721OZEnumerable": 12516135,
+    "ERC721OZ16Enumerable": 10377334
+  },
+  {
+    "ERC721BEnumerable": 734457,
+    "ERC721A": 349679,
+    "ERC721Naomsa": 2924191,
+    "ERC721OZ": 2849811,
+    "ERC721OZ16": 2878102,
+    "ERC721OZEnumerable": 12631061,
+    "ERC721OZ16Enumerable": 10471052
+  },
+  {
+    "ERC721BEnumerable": 738419,
+    "ERC721A": 352019,
+    "ERC721Naomsa": 2949951,
+    "ERC721OZ": 2875293,
+    "ERC721OZ16": 2903841,
+    "ERC721OZEnumerable": 12745988,
+    "ERC721OZ16Enumerable": 10564771
+  },
+  {
+    "ERC721BEnumerable": 742383,
+    "ERC721A": 354359,
+    "ERC721Naomsa": 2975711,
+    "ERC721OZ": 2900775,
+    "ERC721OZ16": 2929580,
+    "ERC721OZEnumerable": 12860915,
+    "ERC721OZ16Enumerable": 10658490
+  },
+  {
+    "ERC721BEnumerable": 774549,
+    "ERC721A": 356699,
+    "ERC721Naomsa": 3001471,
+    "ERC721OZ": 2926257,
+    "ERC721OZ16": 2955319,
+    "ERC721OZEnumerable": 12975842,
+    "ERC721OZ16Enumerable": 10774059
+  },
+  {
+    "ERC721BEnumerable": 778603,
+    "ERC721A": 359039,
+    "ERC721Naomsa": 3027231,
+    "ERC721OZ": 2951739,
+    "ERC721OZ16": 2981058,
+    "ERC721OZEnumerable": 13090769,
+    "ERC721OZ16Enumerable": 10867778
+  },
+  {
+    "ERC721BEnumerable": 782661,
+    "ERC721A": 361379,
+    "ERC721Naomsa": 3052990,
+    "ERC721OZ": 2977220,
+    "ERC721OZ16": 3006796,
+    "ERC721OZEnumerable": 13205695,
+    "ERC721OZ16Enumerable": 10961496
+  },
+  {
+    "ERC721BEnumerable": 786721,
+    "ERC721A": 363719,
+    "ERC721Naomsa": 3078750,
+    "ERC721OZ": 3002702,
+    "ERC721OZ16": 3032535,
+    "ERC721OZEnumerable": 13320622,
+    "ERC721OZ16Enumerable": 11055215
+  },
+  {
+    "ERC721BEnumerable": 790785,
+    "ERC721A": 366059,
+    "ERC721Naomsa": 3104510,
+    "ERC721OZ": 3028184,
+    "ERC721OZ16": 3058274,
+    "ERC721OZEnumerable": 13435549,
+    "ERC721OZ16Enumerable": 11148934
+  },
+  {
+    "ERC721BEnumerable": 794851,
+    "ERC721A": 368399,
+    "ERC721Naomsa": 3130270,
+    "ERC721OZ": 3053666,
+    "ERC721OZ16": 3084013,
+    "ERC721OZEnumerable": 13550476,
+    "ERC721OZ16Enumerable": 11242653
+  },
+  {
+    "ERC721BEnumerable": 798935,
+    "ERC721A": 370739,
+    "ERC721Naomsa": 3156030,
+    "ERC721OZ": 3079148,
+    "ERC721OZ16": 3109752,
+    "ERC721OZEnumerable": 13665403,
+    "ERC721OZ16Enumerable": 11336372
+  },
+  {
+    "ERC721BEnumerable": 803007,
+    "ERC721A": 373079,
+    "ERC721Naomsa": 3181790,
+    "ERC721OZ": 3104630,
+    "ERC721OZ16": 3135491,
+    "ERC721OZEnumerable": 13780330,
+    "ERC721OZ16Enumerable": 11430091
+  },
+  {
+    "ERC721BEnumerable": 807082,
+    "ERC721A": 375419,
+    "ERC721Naomsa": 3207550,
+    "ERC721OZ": 3130112,
+    "ERC721OZ16": 3161230,
+    "ERC721OZEnumerable": 13895257,
+    "ERC721OZ16Enumerable": 11523810
+  },
+  {
+    "ERC721BEnumerable": 811160,
+    "ERC721A": 377759,
+    "ERC721Naomsa": 3233310,
+    "ERC721OZ": 3155594,
+    "ERC721OZ16": 3186969,
+    "ERC721OZEnumerable": 14010184,
+    "ERC721OZ16Enumerable": 11617529
+  },
+  {
+    "ERC721BEnumerable": 815240,
+    "ERC721A": 380099,
+    "ERC721Naomsa": 3259070,
+    "ERC721OZ": 3181076,
+    "ERC721OZ16": 3212708,
+    "ERC721OZEnumerable": 14125111,
+    "ERC721OZ16Enumerable": 11711248
+  },
+  {
+    "ERC721BEnumerable": 819323,
+    "ERC721A": 382439,
+    "ERC721Naomsa": 3284830,
+    "ERC721OZ": 3206558,
+    "ERC721OZ16": 3238447,
+    "ERC721OZEnumerable": 14240038,
+    "ERC721OZ16Enumerable": 11804967
+  },
+  {
+    "ERC721BEnumerable": 823410,
+    "ERC721A": 384779,
+    "ERC721Naomsa": 3310590,
+    "ERC721OZ": 3232040,
+    "ERC721OZ16": 3264186,
+    "ERC721OZEnumerable": 14354965,
+    "ERC721OZ16Enumerable": 11898686
+  },
+  {
+    "ERC721BEnumerable": 827499,
+    "ERC721A": 387119,
+    "ERC721Naomsa": 3336350,
+    "ERC721OZ": 3257522,
+    "ERC721OZ16": 3289925,
+    "ERC721OZEnumerable": 14469892,
+    "ERC721OZ16Enumerable": 11992405
+  },
+  {
+    "ERC721BEnumerable": 831591,
+    "ERC721A": 389459,
+    "ERC721Naomsa": 3362110,
+    "ERC721OZ": 3283004,
+    "ERC721OZ16": 3315664,
+    "ERC721OZEnumerable": 14584819,
+    "ERC721OZ16Enumerable": 12086124
+  },
+  {
+    "ERC721BEnumerable": 835685,
+    "ERC721A": 391799,
+    "ERC721Naomsa": 3387870,
+    "ERC721OZ": 3308486,
+    "ERC721OZ16": 3341403,
+    "ERC721OZEnumerable": 14699746,
+    "ERC721OZ16Enumerable": 12179843
   }
 ]

@@ -9,6 +9,8 @@ python = "^3.8"
 pandas = "^1.4.0"
 matplotlib = "^3.5.1"
 Pweave = "^0.30.3"
+seaborn = "^0.11.2"
+plotly = "^5.6.0"
 
 [tool.poetry.dev-dependencies]
 

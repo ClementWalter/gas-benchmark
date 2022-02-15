@@ -3,14 +3,14 @@
 
 pragma solidity ^0.8.0;
 
-import "@openzeppelin/contracts/token/ERC721/ERC721.sol";
+import {ERC721OZ16 as ERC721} from "../base/ERC721OZ16.sol";
 
-contract ERC721OZ is ERC721 {
+contract ERC721OZ16 is ERC721 {
     constructor(string memory name_, string memory symbol_)
         ERC721(name_, symbol_)
     {}
 
-    function safeMintBatch(address _to, uint256[] memory _ids) public {
+    function safeMintBatch(address _to, uint16[] memory _ids) public {
         require(_to != address(0));
         require(_ids.length > 0);
         for (uint256 i = 0; i < _ids.length; i++) {

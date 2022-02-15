@@ -2,7 +2,7 @@
 
 pragma solidity ^0.8.0;
 
-import {ERC721} from "./ERC721.sol";
+import {ERC721B} from "./ERC721B.sol";
 import {IERC721Enumerable} from "@openzeppelin/contracts/token/ERC721/extensions/IERC721Enumerable.sol";
 import {IERC165} from "@openzeppelin/contracts/utils/introspection/IERC165.sol";
 import "solidity-bytes-utils/contracts/BytesLib.sol";
@@ -14,7 +14,7 @@ import "solidity-bytes-utils/contracts/BytesLib.sol";
  *      Based on the study for writing indexes and addresses, we use a single mapping for storing all the data
  *      We use the uint16 / bytes2 tokenId
  */
-contract ERC721Enumerable is ERC721, IERC721Enumerable {
+contract ERC721BEnumerable is ERC721B, IERC721Enumerable {
     function totalSupply() external view override returns (uint256) {
         uint256 total = 0;
         for (uint256 i = 0; i < owners.length; i += 20) {
@@ -58,7 +58,7 @@ contract ERC721Enumerable is ERC721, IERC721Enumerable {
     }
 
     constructor(string memory name_, string memory symbol_)
-        ERC721(name_, symbol_)
+        ERC721B(name_, symbol_)
     {}
 
     /**
@@ -68,7 +68,7 @@ contract ERC721Enumerable is ERC721, IERC721Enumerable {
         public
         view
         virtual
-        override(IERC165, ERC721)
+        override(IERC165, ERC721B)
         returns (bool)
     {
         return

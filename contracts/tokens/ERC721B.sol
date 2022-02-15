@@ -18,7 +18,7 @@ import "@openzeppelin/contracts/utils/Address.sol";
  *      Based on the study for writing indexes and addresses, we use a single mapping for storing all the data
  *      We use the uint16 / bytes2 tokenId
  */
-contract ERC721 is IERC721, IERC721Metadata, Context, ERC165 {
+contract ERC721B is IERC721, IERC721Metadata, Context, ERC165 {
     using Address for address;
 
     // Mapping from address to tokenIds. This is the single source of truth for the data
@@ -88,14 +88,21 @@ contract ERC721 is IERC721, IERC721Metadata, Context, ERC165 {
         return _tokensByOwner[owner].length / 2;
     }
 
+    /// @dev Returns the balance of the owner at index ownerIndex in the internal owners array
+    /// @param ownerIndex uint256 The index of the owner in the internal owners array
+    /// @return uint256 The number of tokens owned by the address
     function _balanceOf(uint256 ownerIndex) internal view returns (uint256) {
-        require(ownerIndex < owners.length, "ERC721: ownerIndex out of bound");
-        return balanceOf(BytesLib.toAddress(owners, ownerIndex));
+        require(
+            ownerIndex * 20 < owners.length,
+            "ERC721B: ownerIndex out of bound"
+        );
+        return balanceOf(BytesLib.toAddress(owners, ownerIndex * 20));
     }
 
     /// @dev Returns the index of owner in the internal array of owners. Revert if not found.
     /// @param owner address The address we retrieve the index for
-    function getOwnerIndex(address owner) public view returns (uint256) {
+    /// @return uint256 The index of the owner in the internal owners array
+    function getOwnerIndex(address owner) external view returns (uint256) {
         uint256 index = 0;
         while (index < owners.length) {
             if (BytesLib.toAddress(owners, index) == owner) {
@@ -103,7 +110,7 @@ contract ERC721 is IERC721, IERC721Metadata, Context, ERC165 {
             }
             index += 20;
         }
-        revert("ERC721: Owner not found");
+        revert("ERC721B: Owner not found");
     }
 
     /// @dev Returns the array of bool telling if a token exists or not.
@@ -151,7 +158,7 @@ contract ERC721 is IERC721, IERC721Metadata, Context, ERC165 {
             } catch (bytes memory reason) {
                 if (reason.length == 0) {
                     revert(
-                        "ERC721: transfer to non ERC721Receiver implementer"
+                        "ERC721B: transfer to non ERC721Receiver implementer"
                     );
                 } else {
                     assembly {
@@ -174,10 +181,6 @@ contract ERC721 is IERC721, IERC721Metadata, Context, ERC165 {
         address to,
         uint256 tokenIndex
     ) private {
-        require(
-            BytesLib.toAddress(owners, fromIndex * 20) == from,
-            "ERC721: transfer from address is invalid"
-        );
         if (_tokensByOwner[to].length == 0) {
             owners = bytes.concat(owners, bytes20(to));
         }
@@ -187,6 +190,10 @@ contract ERC721 is IERC721, IERC721Metadata, Context, ERC165 {
             tokenIndex + 2
         );
         if (_tokensByOwner[from].length == 2) {
+            require(
+                BytesLib.toAddress(owners, fromIndex * 20) == from,
+                "ERC721B: transfer from address is invalid"
+            );
             owners = bytes.concat(
                 BytesLib.slice(owners, 0, fromIndex * 20),
                 BytesLib.slice(
@@ -221,19 +228,19 @@ contract ERC721 is IERC721, IERC721Metadata, Context, ERC165 {
         address to,
         uint256 tokenIndex
     ) external {
-        require(from != address(0), "ERC721: from cannot be the zero address");
-        require(to != address(0), "ERC721: to cannot be the zero address");
+        require(from != address(0), "ERC721B: from cannot be the zero address");
+        require(to != address(0), "ERC721B: to cannot be the zero address");
         require(
             tokenIndex < _tokensByOwner[from].length / 2,
-            "ERC721: token index out of range"
+            "ERC721B: token index out of range"
         );
         uint16 tokenId = BytesLib.toUint16(
             _tokensByOwner[from],
             tokenIndex * 2
         );
         require(
-            _isApprovedOrOwner(_msgSender(), tokenId),
-            "ERC721: transfer caller is not owner nor approved"
+            _isApproved(_msgSender(), tokenId) || from == _msgSender(),
+            "ERC721B: transfer caller is not owner nor approved"
         );
         _transfer(from, fromIndex, to, tokenIndex);
         _checkOnERC721Received(from, to, tokenId, "");
@@ -245,10 +252,10 @@ contract ERC721 is IERC721, IERC721Metadata, Context, ERC165 {
      * @param tokenIds bytes The token ids to mint
      */
     function _mintBatch(address to, bytes calldata tokenIds) private {
-        require(tokenIds.length > 0, "ERC721: cannot mint with no token Ids");
+        require(tokenIds.length > 0, "ERC721B: cannot mint with no token Ids");
         require(
             tokenIds.length % 2 == 0,
-            "ERC721: tokenIds should be bytes of uint16"
+            "ERC721B: tokenIds should be bytes of uint16"
         );
         if (_tokensByOwner[to].length == 0) {
             owners = bytes.concat(owners, bytes20(to));
@@ -256,7 +263,7 @@ contract ERC721 is IERC721, IERC721Metadata, Context, ERC165 {
         for (uint256 i = 0; i < tokenIds.length; i += 2) {
             require(
                 !tokenExists[BytesLib.toUint16(tokenIds, i)],
-                "ERC721: token already exists"
+                "ERC721B: token already exists"
             );
             tokenExists[BytesLib.toUint16(tokenIds, i)] = true;
             emit Transfer(address(0), to, BytesLib.toUint16(tokenIds, i));
@@ -289,14 +296,14 @@ contract ERC721 is IERC721, IERC721Metadata, Context, ERC165 {
             // if sender is not approved, they need to be the owner
             require(
                 tokenIndex * 2 < _tokensByOwner[_msgSender()].length,
-                "ERC721: token index out of range"
+                "ERC721B: token index out of range"
             );
             require(
                 BytesLib.toUint16(
                     _tokensByOwner[_msgSender()],
                     tokenIndex * 2
                 ) == tokenId,
-                "ERC721: caller is neither approved nor owner"
+                "ERC721B: caller is neither approved nor owner"
             );
             emit Approval(_msgSender(), to, tokenId);
         }
@@ -316,7 +323,7 @@ contract ERC721 is IERC721, IERC721Metadata, Context, ERC165 {
         override
         returns (address)
     {
-        require(_exists(tokenId), "ERC721: token does not exist");
+        require(_exists(tokenId), "ERC721B: token does not exist");
         return _tokenApprovals[uint16(tokenId)];
     }
 
@@ -332,7 +339,7 @@ contract ERC721 is IERC721, IERC721Metadata, Context, ERC165 {
     {
         require(
             operator != _msgSender(),
-            "ERC721: cannot approve caller as operator"
+            "ERC721B: cannot approve caller as operator"
         );
         bytes memory tokens = _tokensByOwner[_msgSender()];
         for (uint256 i = 0; i < tokens.length; i += 2) {
@@ -350,7 +357,7 @@ contract ERC721 is IERC721, IERC721Metadata, Context, ERC165 {
      * @param operator The address of the operator to check.
      */
     function isApprovedForAll(address owner, address operator)
-        public
+        external
         view
         virtual
         override
@@ -365,21 +372,14 @@ contract ERC721 is IERC721, IERC721Metadata, Context, ERC165 {
         return true;
     }
 
-    /// @dev Copied from OpenZeppelin ERC721.sol
-    function _isApprovedOrOwner(address spender, uint256 tokenId)
+    /// @dev Overwrite this function to add some other approval logic, for instance for OpenSea.
+    function _isApproved(address spender, uint256 tokenId)
         internal
         view
         virtual
         returns (bool)
     {
-        require(
-            _exists(tokenId),
-            "ERC721: operator query for nonexistent token"
-        );
-        address owner = ERC721.ownerOf(tokenId);
-        return (spender == owner ||
-            getApproved(tokenId) == spender ||
-            isApprovedForAll(owner, spender));
+        return getApproved(tokenId) == spender;
     }
 
     ///////////////////////////////////////////////////////////////////////////////
@@ -407,11 +407,11 @@ contract ERC721 is IERC721, IERC721Metadata, Context, ERC165 {
         uint256 tokenId,
         bytes memory data
     ) internal {
-        require(from != address(0), "ERC721: from cannot be the zero address");
-        require(to != address(0), "ERC721: to cannot be the zero address");
+        require(from != address(0), "ERC721B: from cannot be the zero address");
+        require(to != address(0), "ERC721B: to cannot be the zero address");
         require(
-            _isApprovedOrOwner(_msgSender(), tokenId),
-            "ERC721: transfer caller is not owner nor approved"
+            _isApproved(_msgSender(), tokenId) || from == _msgSender(),
+            "ERC721B: transfer caller is not owner nor approved"
         );
         uint256 tokenIndex = 0;
         while (
@@ -422,19 +422,22 @@ contract ERC721 is IERC721, IERC721Metadata, Context, ERC165 {
         }
         require(
             tokenIndex < _tokensByOwner[from].length,
-            "ERC721: from does not own the token"
+            "ERC721B: from does not own the token"
         );
 
         uint256 fromIndex;
-        for (fromIndex = 0; fromIndex < owners.length; fromIndex += 20) {
-            if (BytesLib.toAddress(owners, fromIndex) == from) {
-                break;
+        if (_tokensByOwner[from].length == 2) {
+            // A bit hacky but this is to avoid a useless computation for this gassy implementation
+            for (fromIndex = 0; fromIndex < owners.length; fromIndex += 20) {
+                if (BytesLib.toAddress(owners, fromIndex) == from) {
+                    break;
+                }
             }
+            require(
+                BytesLib.toAddress(owners, fromIndex) == from,
+                "ERC721B: from is not in owners list"
+            );
         }
-        require(
-            BytesLib.toAddress(owners, fromIndex) == from,
-            "ERC721: from is not in owners list"
-        );
         _transfer(from, fromIndex, to, tokenIndex);
         _checkOnERC721Received(from, to, tokenId, data);
     }
@@ -475,11 +478,11 @@ contract ERC721 is IERC721, IERC721Metadata, Context, ERC165 {
         address to,
         uint256 tokenId
     ) external override {
-        require(from != address(0), "ERC721: from cannot be the zero address");
-        require(to != address(0), "ERC721: to cannot be the zero address");
+        require(from != address(0), "ERC721B: from cannot be the zero address");
+        require(to != address(0), "ERC721B: to cannot be the zero address");
         require(
-            _isApprovedOrOwner(_msgSender(), tokenId),
-            "ERC721: transfer caller is not owner nor approved"
+            _isApproved(_msgSender(), tokenId),
+            "ERC721B: transfer caller is not owner nor approved"
         );
         uint256 tokenIndex = 0;
         while (
@@ -490,20 +493,43 @@ contract ERC721 is IERC721, IERC721Metadata, Context, ERC165 {
         }
         require(
             tokenIndex < _tokensByOwner[from].length,
-            "ERC721: from does not own the token"
+            "ERC721B: from does not own the token"
         );
 
         uint256 fromIndex;
-        for (fromIndex = 0; fromIndex < owners.length; fromIndex += 20) {
-            if (BytesLib.toAddress(owners, fromIndex) == from) {
-                break;
+        if (_tokensByOwner[from].length == 2) {
+            // A bit hacky but this is to avoid a useless computation for this gassy implementation
+            for (fromIndex = 0; fromIndex < owners.length; fromIndex += 20) {
+                if (BytesLib.toAddress(owners, fromIndex) == from) {
+                    break;
+                }
+            }
+            require(
+                BytesLib.toAddress(owners, fromIndex) == from,
+                "ERC721B: from is not in owners list"
+            );
+        }
+        _transfer(from, fromIndex, to, tokenIndex);
+    }
+
+    /**
+     * @dev Returns true of owner is the owner of the given token.
+     *      This is much less gassy than using address == ownerOf(tokenId).
+     * @param owner address The asserted owner
+     * @param tokenId uint16 A given token id
+     * @return bool True if the owner is truly the owner of the token
+     */
+    function _isOwnerOf(address owner, uint256 tokenId)
+        private
+        view
+        returns (bool)
+    {
+        for (uint256 j = 0; j < _tokensByOwner[owner].length; j += 2) {
+            if (BytesLib.toUint16(_tokensByOwner[owner], j) == tokenId) {
+                return true;
             }
         }
-        require(
-            BytesLib.toAddress(owners, fromIndex) == from,
-            "ERC721: from is not in owners list"
-        );
-        _transfer(from, fromIndex, to, tokenIndex);
+        return false;
     }
 
     /**
@@ -516,20 +542,9 @@ contract ERC721 is IERC721, IERC721Metadata, Context, ERC165 {
         address owner = address(0);
         for (uint256 i = 0; i < owners.length; i += 20) {
             address currentOwner = BytesLib.toAddress(owners, i);
-            for (
-                uint256 j = 0;
-                j < _tokensByOwner[currentOwner].length;
-                j += 2
-            ) {
-                if (
-                    BytesLib.toUint16(_tokensByOwner[currentOwner], j) ==
-                    tokenId
-                ) {
-                    owner = currentOwner;
-                    break;
-                }
-            }
-            if (owner != address(0)) {
+            bool isOwner = _isOwnerOf(currentOwner, tokenId);
+            if (isOwner) {
+                owner = currentOwner;
                 break;
             }
         }
@@ -542,8 +557,8 @@ contract ERC721 is IERC721, IERC721Metadata, Context, ERC165 {
      * @param tokenId uint265 A given token id
      * @return address The owner of the token.
      */
-    function ownerOf(uint256 tokenId) public view override returns (address) {
-        require(_exists(tokenId), "ERC721: owner query for nonexistent token");
+    function ownerOf(uint256 tokenId) external view override returns (address) {
+        require(_exists(tokenId), "ERC721B: owner query for nonexistent token");
         return _ownerOf(tokenId);
     }
 
@@ -564,12 +579,12 @@ contract ERC721 is IERC721, IERC721Metadata, Context, ERC165 {
         address owner = _ownerOf(tokenId);
         require(
             owner != address(0),
-            "ERC721: approve query for nonexistent token"
+            "ERC721B: approve query for nonexistent token"
         );
         require(
             _tokenApprovals[uint16(tokenId)] == _msgSender() ||
                 owner == _msgSender(),
-            "ERC721: caller is not the owner nor an approved operator for the token"
+            "ERC721B: caller is not the owner nor an approved operator for the token"
         );
         _tokenApprovals[uint16(tokenId)] = to;
         emit Approval(owner, to, tokenId);
