@@ -10,4 +10,6 @@ export const TAGS = {
   ERC721OZ: "ERC721OZ",
   ERC721A: "ERC721A",
   ERC721Naomsa: "ERC721Naomsa",
+  WHICH: "Which",
+  UINT_AND_BOOL: "UintAndBool",
 };

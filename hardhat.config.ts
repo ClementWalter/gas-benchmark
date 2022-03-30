@@ -17,11 +17,16 @@ dotenv.config();
 
 const config: HardhatUserConfig = {
   solidity: {
-    version: "0.8.8",
+    version: "0.8.12",
     settings: {
       optimizer: {
         enabled: true,
-        runs: 2000,
+        runs: 2_000,
+      },
+      outputSelection: {
+        "*": {
+          "*": ["evm.gasEstimates"],
+        },
       },
     },
   },
